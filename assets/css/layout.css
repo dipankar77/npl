@@ -1,0 +1,780 @@
+body{
+    background-color:#000;
+    font-family: 'Metropolis Regular';
+    color: #000;
+}
+#musthead .navbar-brand img{
+    width: 100%;
+    min-width: 100px;
+    max-width: 135px;
+}
+#musthead .navbar-nav .nav-item .nav-link{
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0;
+    font-size: 0.8269rem;
+}
+#musthead .navbar-nav .nav-item .nav-link::after{
+    content: '|';
+    margin: 0 12px;
+}
+#musthead .navbar-nav .nav-item .nav-link.active{
+    color: #FEBE10;
+    font-weight: 600;
+}
+#musthead .navbar-nav .nav-item .nav-link:hover{
+    color: #FEBE10;
+}
+.language{
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 0.8269rem;
+    padding: 0 15px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
+}
+.language a{
+    text-decoration: none;
+    color: #fff;
+}
+.language a.active,
+.language a:hover{
+    color: #FEBE10;
+}
+.action_icon{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.action_icon li{
+    display: inline-block;
+    margin: 0 2px;
+}
+.action_icon li a{
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.action_icon li a:hover{
+    background-color: #FEBE10;
+}
+
+.logos{
+    background:url(../images/logos_bg.jpg) repeat #000;
+    background-size: cover;
+    height: 93px;
+    position: relative;
+}
+.logo_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.56);
+}
+.swiper-button-prev {
+    background-image: url('../images/arrow-l.png') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .swiper-button-next {
+    background-image: url("../images/arrow.png") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .swiper-button-next::after, .swiper-button-prev::after{
+    content: '';
+  }
+  .storeProduct .swiper-button-prev {
+    background-image: url('../images/arrow-b-l.png')!important;
+  }
+
+  .storeProduct .swiper-button-next{
+    background-image: url('../images/arrow-b-r.png')!important;
+  }
+
+.company_logo{
+    padding: 5px 0;
+}
+.company_logo img{
+    width: 100%;
+    padding: 0.3rem;
+}
+
+#industries{
+    background-color: #FEBE10;
+    padding: 30px 0;  
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+    min-height: 387px;
+}
+#industries .verticalHeading h3{
+    color: #000;
+}
+
+
+.indusWrap{
+    flex: 1 0 22%;
+    margin: 0 1rem; 
+    position: relative;   
+}
+.indusCat{
+    background: #000;
+    position: relative;
+    color: white;
+    clip-path: polygon(0% 0, 100% 0, 100% 56%, 0 100%);
+    padding: 10rem 14%;
+    background-size: cover;
+    background-position: center;
+}
+.indusWrap .indusCat:nth-child(2){
+    background: #000;
+    color: white;
+    clip-path: polygon(0% 50%, 100% 6%, 100% 100%, 0% 100%);
+    padding: 10rem 14%;
+    margin-top: -154px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.verticalTitle_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.verticalTitle_box.bot{
+   right: 0;
+}
+/* .verticalTitle_box.bot h3{
+    padding: 8px 60px 8px 35px;
+} */
+.verticalTitle_box h3{
+    font-size: 1.75rem;
+    font-family: 'Metropolis Black';
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    margin: 0;
+    padding: 523% 25% 98% 25%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(-180deg);
+}
+.verticalTitle_box.bot h3{    
+    margin-left: 100%;
+    right: 50px;
+    position: relative;
+    padding: 22% 3% 46% 3%;
+    font-size: 1.75rem;
+}
+
+#surfaces{
+    background-color: #000;
+}
+#surfaces .verticalHeading  h3{   
+    color: #000;   
+    padding:7rem 0;
+    background-color: #eee;
+}
+.surfacewrapper{
+    flex-wrap:wrap;
+}
+.surfacePatch{
+    flex: 1 0 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 199px;
+    font-size: 2rem;
+    margin: 0.35%;
+    font-family: 'Metropolis Thin';
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+    overflow: hidden;
+}
+
+#store{
+    background-color: #FEBE10;
+}
+
+#store .verticalHeading  h3{
+    color: #fff;
+   background-color: #000;
+   padding: 14.1rem 0;
+}
+.storeContent{
+    overflow: hidden;
+}
+.storeText{
+    text-align: center;
+    color: #000;
+}
+.storeText p{
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+}
+.storeText h4{
+    font-family: 'Metropolis Black';
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.productWrapper{
+    position: relative;    
+    margin: 2rem 0.5rem;
+}
+.proImg img{
+    width: 100%;
+}
+.productSticker{position: absolute;
+    right: 3%;
+    top: -8%;}
+    .productInfo{padding: 1rem;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;}
+
+.productInfo .proTitle{
+    font-family: 'Feri Candi', sans-serif;
+}
+.productInfo small{
+    text-transform: uppercase;
+    font-size: 0.6rem;
+}
+.price{
+    padding:10px 0;
+}
+.cornercut{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #FEBE10;
+    clip-path: polygon(100% 0%, 101% 0%, 100% 124%, 0% 100%);
+    width: 35px;
+    height: 35px;
+}
+.addtocart{
+    background-color: #fff;
+    font-size: 0.8rem;
+    padding: 0.1rem 0.2rem;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -10px;
+    z-index: 1;
+}
+.addtocart a{
+    color: #000;
+    text-decoration: none;}
+    .addtocart a:hover{
+        text-decoration: underline;
+    } 
+
+.addtocart a span{
+    padding: 0 5px;
+}
+
+
+#latest{
+    background: url('../images/black-bg.jpg') no-repeat center;
+    background-size: cover;
+}
+#latest > .strip{
+    background-color: #FEBE10;
+    padding: 7rem 0;
+}
+
+#latest .verticalHeading h3{   
+    color: #000;    
+    padding: 12rem 0;   
+    background-color: #FEBE10;
+}
+#latest .verticalHeading h3 span{
+    color: #FEBE10;
+}
+.block{
+    width: 72%;
+    color: #000;
+    background-size: contain;
+    background-position: 0px 1px;
+    background-repeat: no-repeat;
+}
+.info-img{
+    border: 1px solid #FEBE10;
+}
+
+.block .info{
+    padding: 2.5rem 2rem;
+    background-image: url(../images/info-bg.png);
+    background-size: cover;
+    width: 39%; 
+}
+
+.block .info h3{
+    font-family: 'Metropolis Black';   
+    position: relative;
+}
+.block .info h3:after{
+    content: '';
+    width: 78%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 102px;
+}
+.block .info p.para{
+    font-size: 0.8rem;
+}
+.block .info a{
+    text-decoration: underline;
+    color: #000;
+    position: relative;
+}
+.block .info a:hover{
+    text-decoration: none;
+}
+.block .info a::after{
+    content: '';
+    background: url(../images/read-more-arrow.png) no-repeat left;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 3px;
+    right: -16px;
+}
+
+#socilaMedia{
+    
+    background: repeating-linear-gradient(-35deg, #fff 4px, #Fff 2px, #FEBE10 5px, #FEBE10 14px);
+}
+#socilaMedia .verticalHeading h3{
+    background-color: #000;
+    color: #fff;
+    padding: 7.471rem 0;
+}
+
+.sm-heading{color: #000; margin-bottom: 0; text-align: center;}
+.sm-heading p span{
+    font-family: 'Metropolis Semi Bold';
+}
+
+.sm-heading span a{
+    background-color: #fff;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    font-size: 0.6rem;
+    border-radius: 10px;
+    padding: 0.3rem 1rem;
+    box-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
+}
+.sm-heading span a:hover{
+    background-color: #000;
+    color: #fff;
+}
+#socilaMedia > .strip{
+    background-color: #000;
+    padding: 3rem 0;
+}
+
+#feedback{
+    background-color: #fff;
+}
+
+#feedback .verticalHeading h3{
+    background-color: #FEBE10;
+    padding: 6rem 0;
+    color: #000;
+}
+
+.feedgrid{
+    border-left: 1px solid #999;
+    padding: 0 1rem;
+    height: 35vh;
+    flex:1
+}
+.feedgrid:first-child{
+    border-left: none;
+}
+.feedbackdes{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+.feedbackdes span{
+    color: #FEBE10;
+    font-size: 3.5rem;
+    font-family: 'Metropolis Black';
+    line-height: 2.2;
+}
+.feedbackdes p{
+    line-height: 1.2;
+}
+
+.submitbtn{
+    background-color: #FEBE10;
+    color: #000;
+    border: 0;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    margin: 0;
+    position: absolute;
+    top: 44px;
+    left: 135px;
+    }
+
+    .verticalHeading h3{
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+        font-size: 3.5rem;
+        font-family: 'Metropolis Black';
+        text-transform: uppercase;
+        color: #fff;
+        padding: 4rem 0;
+        margin: 0;
+    }
+
+#technicalReport{   
+    background: repeating-linear-gradient(-30deg, #fff, #FEBE10 1px, #FEBE10 1px, #FEBE10 12px);
+}
+#technicalReport > .verticalHeading h3{
+    background-color: #655F54;    
+}
+#technicalReport > .verticalHeading h3.sec{
+    color: #000;
+}
+
+#technicaReport .strip h3{
+    writing-mode:vertical-lr;   
+    font-size: 4.5rem;
+    font-family: 'Metropolis Black';
+    text-transform: uppercase;
+    color: #fff;
+    transform: rotate(180deg);
+    margin: 0;
+    padding: 23rem 0;
+    height: 100%;
+   
+}
+#technicaReport > .headingtech h2{
+    writing-mode: vertical-rl;   
+    font-size: 4.5rem;
+    font-family: 'Metropolis Black';
+    text-transform: uppercase;
+    color: #fff;
+    transform: rotate(180deg);
+    margin: 0;
+    padding: 23rem 0;
+    height: 100%;
+}
+.report-text p{
+font-family: 'Metropolis Regular';
+font-size: 1.5rem;
+line-height: 1.2;
+text-align: center;
+}
+.report-text p span{
+    font-weight: bold;
+}
+.reportwrap{
+    text-align: center;
+    padding: 0 2.4rem;
+    line-height: 1.3;
+}
+.reportwrap p{
+    font-size: 1.3rem;
+    font-family: 'Metropolis Light';
+}
+
+#rational{
+    background: url('../images/sectionBg.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 460px;
+}
+
+#rational .verticalHeading h3{
+    background-color: #000;
+}
+
+.rationalhead{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.rationalhead p{
+    font-size: 3.5rem;
+    font-family: 'Metropolis Light';
+    text-align: center;
+}
+
+
+#relevant .verticalHeading h3 {    
+    background-color: #FEBE10 !important;
+    color: #000;
+    padding: 8.9rem 0;
+}
+
+.relBlock {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;    
+    min-height: 589px;
+    background-color: #eee;
+}
+.relBlock h2{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: 'Metropolis Black';
+    transform: rotate(180deg);
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 5rem;
+
+}
+
+.relBlock p {
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-family: 'Metropolis Light';
+}
+
+.relBlock h2 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    color: #fff;
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+
+.applicator{
+    width: 100%;
+    position: relative;
+    background: url('../images/applicationbg.jpg') no-repeat center center #655F54;
+    background-size: cover;
+    min-height: 556px;      
+}
+.applicator.home{ background: url(../images/application.jpg) no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content:space-between}
+.applicator .verticalHeading h3{
+    background-color: rgb(0, 0, 0);
+    color: rgb(254, 190, 16);
+    padding: 7.3rem 0;
+}
+.applicator .verticalHeading h3.home{
+    background-color: transparent;
+    color: #fff;
+    text-align: end;
+    padding: 5.2rem 0.5rem;
+}
+
+.application-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.verticalHeading h3.sec{
+    background-color: transparent !important;
+    padding: 0 !important;
+    color: #fff;
+}
+.application-content{
+    display: flex;
+    text-align: center;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+.application-content.home{
+    width: 29%;
+    margin-right: 5rem;
+}
+.application-content.home .apptext{
+    color: #FEBE10;
+    margin-top: 3rem;
+}
+.application-content.home p{
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+.cricleimg{
+    width: 240px;
+    height: 240px;
+    border: 3px dashed #FEBE10;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.apptext{
+    font-size: 2.5rem;
+    font-family: 'Metropolis Black';
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+.readmore{
+    background-color: #FEBE10;
+    display: block;
+    position: relative;
+    padding: 6px 30px; 
+}
+.readmore.click{
+    background-color: transparent;
+}
+.readmore.click a{
+    color: #fff;
+}
+.readmore.click a::after{
+    background: url(../images/click-arrow.png) no-repeat;
+}
+ .readmore a{
+    color: #000;
+    text-decoration: underline;
+    position: relative;
+}
+ .readmore a::after{
+    left: 90px;
+    content: '';
+    position: absolute;
+    background: url(../images/read-more-arrow.png) no-repeat;
+    width: 12px;
+    height: 12px;
+    top: 2px;
+}
+
+
+
+
+
+footer{
+    background-color: #000;
+    min-height: 345px;
+}
+.footerLogo{
+    position: relative;
+    background: url('../images/footer-bg.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.footerbg-overlay{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,0,0.56);
+    height: 100%;
+}
+
+.footerLinks h3{
+    font-family: 'Metropolis Black';
+    color: #FEBE10;
+    text-transform: uppercase;
+    position: relative;    
+}
+.footerLinks h3::after{
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 1px;
+    background-color: #FEBE10;
+    left: 0;
+    bottom: 0;
+
+}
+.footerLinks ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.footerLinks ul li{
+    font-size: 0.8rem;
+    padding: 5px 0;
+}
+.footerLinks ul li::before{
+    content: '\2022';
+    color: #FEBE10;
+    margin-left: 0rem;
+    padding-right: 0.5rem;
+}
+.footerLinks ul li a{
+    color: #fff;
+    text-decoration: underline;
+   
+}
+.footerLinks ul li a:hover{
+    color: #FEBE10;
+    text-decoration: none;
+}
+.subscribe{
+    margin-top: 1rem;
+}
+.subscribe p{
+    color: #FEBE10;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+.subscribe input[type="text"]{
+    padding: 2px;
+}
+.subscribe button{  
+    background-color: #FEBE10;
+    color: #000;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    border-radius: 15px;
+    border: none;
+}
+.subscribe button:hover{
+    background-color: #fff;
+}
+.social-icon a{
+    padding-right: 7px;
+}
+.certify{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: #fff;
+}
+.copyright{
+    padding: 1rem 0;
+    background-color: #FEBE10;
+    color: #000;
+    text-align: center;
+}

@@ -1,0 +1,110 @@
+/* X-Small devices (portrait phones, less than 576px)*/
+/* No media query for `xs` since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 575.98px) { 
+    .language{
+        display: unset;
+    }
+    #industries{
+        flex-direction: column;
+    }
+    #industries .verticalHeading{
+        margin: 0 auto;
+    }
+   .verticalHeading h3{
+        writing-mode:unset;
+        text-orientation: mixed;
+        transform:unset;
+        padding: 1rem 7rem;
+        font-size: 2rem;
+    }
+    .verticalTitle_box h3{padding: 4.5rem 9px;}
+    .indusWrap{
+        width: 65%;
+        margin-bottom: 2rem;
+    }
+    .indusWrap .indusCat:nth-child(2){
+        padding: 12rem 14%;
+        clip-path: polygon(0% 42%, 100% 5%, 98% 100%, 0% 100%);
+    }
+    #surfaces .verticalHeading h3 {       
+        padding: 0.5rem 10rem;      
+        
+      }
+      .surfacePatch {
+        flex: 1 0 34%;
+      }
+      #store .verticalHeading h3 {
+        padding: 1.1rem 13rem;
+      }
+      .storeText p{
+        font-size: 1rem;
+      }
+      .storeText h4{
+        font-size: 2rem;
+      }
+      .applicator .verticalHeading h3.home {
+        text-align: center;
+        padding: 1.2rem 0;
+        font-size: 2rem;
+      }
+      .application-content.home {
+        width: 80%;
+        margin: 95px;
+      }
+      #latest .verticalHeading h3 {
+        padding: 1rem 4rem;
+        font-size: 2rem;
+      }
+      .text-white {
+        font-size: 1.2rem !important;
+      }
+      .block .info{
+        width: 100%;
+        padding: 1.5rem 1rem;
+      }
+      .block .info h3::after {
+        top: 88px;
+      }
+      #socilaMedia .verticalHeading h3 {
+        padding: 1rem 5.4rem;
+        font-size: 2rem;
+      }
+      #feedback .verticalHeading h3 {
+        padding: 1rem 5rem;
+      }
+      .feedgrid{
+        border-left: 0;
+      }
+      .rationalhead p {
+        font-size: 2.5rem;}
+        #relevant .verticalHeading h3 {
+            padding: 1rem 8rem;
+          }
+          .relBlock{
+            width: 100%;
+          }
+          .applicator .verticalHeading h3 {
+            padding: 1rem 7.1rem;
+            text-align: center;
+          }
+          .application-content{
+            width: 100%;
+          }
+          #rational{
+            min-height: 300px;
+          }
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 767.98px) {  }
+
+/* Large devices (desktops, 992px and up)*/
+@media (max-width: 991.98px) {  }
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (max-width: 1199.98px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (max-width: 1399.98px) {  }
