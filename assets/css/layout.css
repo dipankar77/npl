@@ -34,7 +34,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 45px;
+    margin-left: 0;
 }
 .language a{
     text-decoration: none;
@@ -78,6 +78,21 @@ body{
     height: 100%;
     background-color: rgba(0,0,0,0.56);
 }
+.herobg{
+    background: url('../images/hero-banner.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 460px;
+}
+.assets-icon > div > .home-icon {
+    transform: scale(1);
+    padding: 0.3rem 0;
+    margin-left: 2rem;
+}
+
+.trylucky{padding: 35px 2rem;
+    width: auto;
+    transform: scale(1.2);
+    margin-right: 2%;}
 .swiper-button-prev {
     background-image: url('../images/arrow-l.png') !important;
     background-repeat: no-repeat;
