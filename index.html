@@ -19,7 +19,7 @@
 
 <body>
   <header>
-    <nav id="musthead" class="navbar navbar-expand-lg navbar-dark py-4">
+    <nav id="musthead" class="navbar navbar-expand-lg navbar-dark py-2 py-md-4">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="assets/images/logo.svg" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -66,9 +66,9 @@
     <div class="card bg-dark text-white border-0 rounded-0 herobg">
       <!-- <img src="assets/images/hero-banner.jpg" class="card-img" alt="hero"> -->
       <div class="card-img-overlay">
-        <div class="d-flex justify-content-between align-items-start">
+        <div class="d-flex justify-content-center justify-content-md-between align-items-start flex-column flex-md-row">
           <div class="assets-icon">
-            <div class="d-flex justify-content-between align-items-center flex-row flex-md-column">
+            <div class="d-flex justify-content-center justify-content-md-between align-items-center flex-row flex-md-column">
               <img src="assets/images/asset-1.png" class="img-fluid home-icon" alt="assets 1">
               <img src="assets/images/asset-2.png" class="img-fluid home-icon" alt="assets 1">
               <img src="assets/images/asset-3.png" class="img-fluid home-icon" alt="assets 1">
@@ -202,7 +202,7 @@
       <div class="verticalHeading">
         <h3>Store</h3>
       </div>
-      <div class="storeContent d-flex justify-content-center align-items-center p-5 flex-column w-100">
+      <div class="storeContent d-flex justify-content-center align-items-center p-3 p-md-5 flex-column w-100">
         <div class="storeText">
           <p>enjoy living in a protected environment with</p>
           <h4>nano protection layers</h4>
@@ -425,20 +425,20 @@
       <div class="verticalHeading">
         <h3>Feedback</h3>
       </div>
-      <div class="d-flex justify-content-center align-items-center flex-column p-5 w-100">
-        <div class="feedHead d-flex justify-content-center align-items-center flex-column flex-md-row">
+      <div class="d-flex justify-content-center align-items-center flex-column px-3 px-md-5 w-100">
+        <div class="feedHead d-flex justify-content-center align-items-center pt-2 pt-md-0 flex-column flex-md-row">
           <span class="pe-3"><img src="assets/images/feedback-icon.png" class="img-flui" alt="feedback"></span>
           <p class="fs-2">Customer Feedback Form</p>
         </div>
         <form
-          class="feedbackfrorm d-flex justify-content-between align-items-start flex-column flex-md-row py-0 py-md-5">
+          class="feedbackfrorm d-flex justify-content-between align-items-start flex-column flex-md-row pt-2 pt-md-5">
           <div class="feedgrid d-flex flex-column">
             <div class="feedbackdes">
               <span>1</span>
               <p class="fs-5 ps-3">How would you
                 rate our product?</p>
             </div>
-            <span><img src="assets/images/star.png" class="img-fluid" alt="star"></span>
+            <span class="text-center"><img src="assets/images/star.png" class="img-fluid" alt="star"></span>
           </div>
 
           <div class="feedgrid d-flex flex-column">
@@ -476,9 +476,8 @@
                 like to share about our product and
                 customer experience?</p>
             </div>
-            <div class="form-floating m-auto text-center">
-              <textarea class="form-control rounded-0" rows="4" cols="50" placeholder="Leave a comment here"
-                id="floatingTextarea"></textarea>
+            <div class="form-floating text-center">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
               <label for="floatingTextarea">Comments</label>
               <button type="submit" class="submitbtn">Submit</button>
             </div>
@@ -639,32 +638,32 @@
 
 
     });
-    // function disableRightClick() {
-    //   alert("Sorry, right click is not allowed !!");
-    //   return false;
-    // }
-    // document.onkeydown = function (e) {
-    //   if (e.ctrlKey &&
-    //     (e.keyCode === 85)) {
-    //     return false;
-    //   }
-    // };
-    // var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+    function disableRightClick() {
+      alert("Sorry, right click is not allowed !!");
+      return false;
+    }
+    document.onkeydown = function (e) {
+      if (e.ctrlKey &&
+        (e.keyCode === 85)) {
+        return false;
+      }
+    };
+    var isNS = (navigator.appName == "Netscape") ? 1 : 0;
 
-    // if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
+    if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
 
-    // function mischandler() {
-    //   return false;
-    // }
+    function mischandler() {
+      return false;
+    }
 
-    // function mousehandler(e) {
-    //   var myevent = (isNS) ? e : event;
-    //   var eventbutton = (isNS) ? myevent.which : myevent.button;
-    //   if ((eventbutton == 2) || (eventbutton == 3)) return false;
-    // }
-    // document.oncontextmenu = mischandler;
-    // document.onmousedown = mousehandler;
-    // document.onmouseup = mousehandler;
+    function mousehandler(e) {
+      var myevent = (isNS) ? e : event;
+      var eventbutton = (isNS) ? myevent.which : myevent.button;
+      if ((eventbutton == 2) || (eventbutton == 3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
 
   </script>
 

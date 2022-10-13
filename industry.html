@@ -18,7 +18,7 @@
 
 <body>
   <header>
-    <nav id="musthead" class="navbar navbar-expand-lg navbar-dark py-4">
+    <nav id="musthead" class="navbar navbar-expand-lg navbar-dark py-2 py-md-4">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="assets/images/logo.svg" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -33,10 +33,10 @@
           </div>
           <ul class="navbar-nav m-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="industry.html">industries</a>
+              <a class="nav-link" href="industry.html">industries</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">surfaces</a>
@@ -96,7 +96,7 @@
       <div class="verticalHeading">
         <h3 class="sec">Reports</h3>
       </div>
-      <div class="reports d-flex justify-content-center align-items-center flex-column p-5 w-100">
+      <div class="reports d-flex justify-content-center align-items-center flex-column p-3 p-md-5 w-100">
         <div class="report-text">
           <p>Please check the following <span>Technical Reports</span><br />for more detailed information about the
             products. </p>
@@ -297,32 +297,32 @@
       },
     });
 
-    // function disableRightClick() {
-    //   alert("Sorry, right click is not allowed !!");
-    //   return false;
-    // }
-    // document.onkeydown = function (e) {
-    //   if (e.ctrlKey &&
-    //     (e.keyCode === 85)) {
-    //     return false;
-    //   }
-    // };
-    // var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+    function disableRightClick() {
+      alert("Sorry, right click is not allowed !!");
+      return false;
+    }
+    document.onkeydown = function (e) {
+      if (e.ctrlKey &&
+        (e.keyCode === 85)) {
+        return false;
+      }
+    };
+    var isNS = (navigator.appName == "Netscape") ? 1 : 0;
 
-    // if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
+    if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
 
-    // function mischandler() {
-    //   return false;
-    // }
+    function mischandler() {
+      return false;
+    }
 
-    // function mousehandler(e) {
-    //   var myevent = (isNS) ? e : event;
-    //   var eventbutton = (isNS) ? myevent.which : myevent.button;
-    //   if ((eventbutton == 2) || (eventbutton == 3)) return false;
-    // }
-    // document.oncontextmenu = mischandler;
-    // document.onmousedown = mousehandler;
-    // document.onmouseup = mousehandler;
+    function mousehandler(e) {
+      var myevent = (isNS) ? e : event;
+      var eventbutton = (isNS) ? myevent.which : myevent.button;
+      if ((eventbutton == 2) || (eventbutton == 3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
   </script>
 
 </body>
