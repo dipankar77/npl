@@ -7,12 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- app CSS -->
   <link href="assets/css/app.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <link href="http://fonts.cdnfonts.com/css/feri-candi" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="assets/fonts/fonts.css">
-
   <title>Industry</title>
 </head>
 
@@ -33,10 +32,10 @@
           </div>
           <ul class="navbar-nav m-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="industry.html">industries</a>
+              <a class="nav-link active" href="industry.html">industries</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">surfaces</a>
@@ -257,13 +256,8 @@
   </footer>
   <div class="copyright">© 2022, Nano Pro Labs by Digital Media Sapiens.</div>
 
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="assets/js/app.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".company_logo", {
       slidesPerView: 6,
@@ -297,32 +291,7 @@
       },
     });
 
-    function disableRightClick() {
-      alert("Sorry, right click is not allowed !!");
-      return false;
-    }
-    document.onkeydown = function (e) {
-      if (e.ctrlKey &&
-        (e.keyCode === 85)) {
-        return false;
-      }
-    };
-    var isNS = (navigator.appName == "Netscape") ? 1 : 0;
-
-    if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
-
-    function mischandler() {
-      return false;
-    }
-
-    function mousehandler(e) {
-      var myevent = (isNS) ? e : event;
-      var eventbutton = (isNS) ? myevent.which : myevent.button;
-      if ((eventbutton == 2) || (eventbutton == 3)) return false;
-    }
-    document.oncontextmenu = mischandler;
-    document.onmousedown = mousehandler;
-    document.onmouseup = mousehandler;
+    
   </script>
 
 </body>

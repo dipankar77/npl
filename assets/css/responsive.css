@@ -6,6 +6,9 @@
   .language{
       display: unset;
   }
+  .navbar-dark .navbar-brand{
+    margin: 0 auto;
+  }
   .assets-icon > div > .home-icon {
     padding: 0.3rem 5px;
     margin-left: 0;
@@ -111,15 +114,51 @@
 .language{
   display: unset;
 }
-.trylucky {
-  padding: 100px 4rem;
-  width: auto;
-  transform: scale(1) !important;  
+.navbar-dark .navbar-brand{
+  margin: 0 auto;
+  
 }
+.navbar-dark .navbar-toggler{
+  border-color: transparent;
+}
+.herobg{
+  background: url('../images/mobile-bg.jpg') no-repeat center;
+  background-size: cover;
+  min-height: 570px;
+}
+.card-img-overlay{
+  padding: 0;
+}
+.assets-icon{
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+.trylucky {
+  top: 6rem;
+  right: 1rem;
+}
+.trylucky a{
+  font-size: 13px;
+  text-decoration: none;
+  color: #fff
+}
+.chatIcon{
+  bottom:1rem;
+  left: 1rem;
+  right: unset;
+}
+.chatIcon a {
+  font-size: 11px;
+  text-decoration: none;
+  color: #fff
+}
+.chatIcon a:hover, .trylucky a:hover{
+  text-decoration: underline;
+} 
 .assets-icon > div > .home-icon {
   transform: scale(0.75);
-padding: 0.3rem 0;
-margin: 0 -3px;
+  padding: 0;
+  width: 100%;
 }
 #industries{
   flex-direction: column;
@@ -156,8 +195,8 @@ margin: 0 -3px;
   
 }
 .surfacePatch {
-  flex: 1 0 100%;
-  height: 50px;
+  flex: 1 0 49%;
+  height: 192px;
 }
 #store .verticalHeading h3 {
   padding: 1.1rem 13rem;
@@ -168,6 +207,9 @@ margin: 0 -3px;
 .storeText h4{
   font-size: 1.5rem;
 }
+.applicator.home{
+  background: url('../images/application-mob-bg.png') center center;
+}
 .applicator .verticalHeading h3.home {
   text-align: center;
   padding: 1.2rem 0;
@@ -177,10 +219,10 @@ margin: 0 -3px;
   margin-top: 0rem;
   font-size: 1.5rem;
 }
-.application-content.home {
+/* .application-content.home {
   width: 80%;
   margin: 95px;
-}
+} */
 #latest .verticalHeading h3 {
   padding: 1rem 4rem;
   font-size: 1.5rem;
@@ -225,6 +267,15 @@ margin: 0 -3px;
     #rational{
       min-height: 300px;
     }
+    .footerLinks.socilaMedia h3::after {
+      content: '';
+      position: absolute;
+      width: 38%;
+      height: 1px;
+      background-color: #FEBE10;
+      left: 32%;
+      bottom: -3px;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -237,13 +288,13 @@ margin: 0 -3px;
   position: relative;
 }
 .surfacewrapper {
-  padding: 0 5rem;
+  padding: 0 ;
 }
 .block{
   width: 100%;
 }
 .footerAction{
-  padding: 0 2rem !important;
+  padding: 0 0.5rem !important;
 }
 
 }
