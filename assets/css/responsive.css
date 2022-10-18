@@ -114,12 +114,21 @@
 .language{
   display: unset;
 }
+.language a{
+  font-size: 0.8rem;
+}
+#musthead .navbar-nav .nav-item .nav-link::after{
+  content: '';
+}
 .navbar-dark .navbar-brand{
   margin: 0 auto;
   
 }
 .navbar-dark .navbar-toggler{
   border-color: transparent;
+}
+.logos{
+  height: 50px;
 }
 .herobg{
   background: url('../images/mobile-bg.jpg') no-repeat center;

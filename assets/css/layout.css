@@ -3,6 +3,9 @@ body{
     font-family: 'Metropolis Regular';
     color: #000;
 }
+.bg-black{
+    background-color: #000;
+}
 #musthead .navbar-brand img{
     width: 100%;
     min-width: 100px;
@@ -17,6 +20,9 @@ body{
 #musthead .navbar-nav .nav-item .nav-link::after{
     content: '|';
     margin: 0 12px;
+}
+#musthead .navbar-nav .nav-item:last-child .nav-link::after{
+    content: '';
 }
 #musthead .navbar-nav .nav-item .nav-link.active{
     color: #FEBE10;
@@ -83,18 +89,75 @@ body{
     background-size: cover;
     min-height: 460px;
 }
+.glassbg{
+    background: url('../images/glass-bg.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 460px;
+}
+
+.swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mySwiper2 {
+    height: 80%;
+    width: 100%;
+  }
+
+  .mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+    border: 2px solid #FEBE10;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+
+
+
 .assets-icon{
-    background-color: rgba(100, 77, 77, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.3rem;
+    min-height: 560px;
 }
 .assets-icon > div > .home-icon {
-    transform: scale(1);
-    padding: 0.3rem 0;
+    transform: scale(0.95);
+padding: 0.3rem 0;
     
 }
 .chatIcon{
-    position: absolute;
+    position: fixed;
     bottom: 2rem;
     right: 2rem;
+    background-color: rgba(0,0,0,0.5);
+    padding: 0.2rem;
+    border-radius: 3px;
+    z-index: 1;
 }
 .heroText{
     padding: 10rem 0;
@@ -107,6 +170,12 @@ body{
     text-transform: uppercase;
     margin: 0 auto;
 
+}
+.glassText{
+    text-transform: capitalize !important;
+    font-size: 2.8rem !important;
+    line-height: 1 !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
 .trylucky{
@@ -846,6 +915,49 @@ padding: 0.15rem;
 
 .feedgrid textarea{
     height: 135px;
+}
+
+#glassFeature{
+    background: url('../images/bgsection.png') #000 no-repeat center;
+    background-size: cover;
+}
+.featurhead{
+    background-color: #000;
+    border-top: 2px solid #FEBE10;
+    text-align: center;
+    position: relative;
+}
+.featurhead h2{
+    color: #fff;
+    padding: 0.5rem 6rem;
+    font-family: 'Metropolis Extra Bold';
+    
+}
+.featurhead h3{
+    padding: 0.35rem 0;
+    background-color: #FEBE10;
+    color: #000;
+    font-family: 'Metropolis Bold';
+}
+.featurhead span{
+    color: #FEBE10;
+border: 2px solid #fff;
+position: absolute;
+bottom: 25px;
+left: 45px;
+padding: 0.4rem 1rem;
+background-color: #000;
+font-size: 2rem;
+font-family: 'Metropolis Bold';
+line-height: 1;
+}
+
+.featureInfo{
+    padding: 1rem;
+}
+.featureInfo p{
+    color: #FEBE10;
+    font-weight: bold;
 }
 
 

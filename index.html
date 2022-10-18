@@ -17,30 +17,31 @@
 
 <body>
   <header>
-    <nav id="musthead" class="navbar navbar-expand-lg navbar-dark py-2 py-md-4">
+    <nav id="musthead" class="navbar navbar-expand-lg navbar-dark bg-black py-2 py-md-4">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#"><img src="assets/images/logo.svg" alt="logo"></a>
+        <div class="language me-2 d-md-none d-block">
+          <a href="#">عمان&nbsp;</a>
+          <span>/&nbsp;</span>
+          <a href="#" class="active">&nbsp;English</a>
+        </div>
         <ul class="action_icon d-md-none d-block">
         <li><a href="#" class="active"><img src="assets/images/icon-cart.svg" width="25" alt="user icon" /></a></li>
       </ul>
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="language">
-            <a href="#">عمان&nbsp;</a>
-            <span>/&nbsp;</span>
-            <a href="#" class="active">&nbsp;English</a>
-          </div>
+          
           <ul class="navbar-nav m-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link" href="#">surfaces</a>
+              <a class="nav-link" href="glass-surfaces.html">surfaces</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">store</a>
@@ -53,10 +54,13 @@
             </li>
 
           </ul>
-          <ul class="action_icon">
-            <li><a href="#"><img src="assets/images/icon-user.svg" width="15" alt="user icon" /></a></li>
-            <li><a href="#"><img src="assets/images/icon-support.svg" width="15" alt="user icon" /></a></li>
-            <li><a href="#"><img src="assets/images/icon-cart.svg" width="15" alt="user icon" /></a></li>
+          <div class="language me-2 d-none d-md-block">
+            <a href="#">عمان&nbsp;</a>
+            <span>/&nbsp;</span>
+            <a href="#" class="active">&nbsp;English</a>
+          </div>
+          <ul class="action_icon"> <li><a href="#"><img src="assets/images/icon-user.svg" width="15" alt="user icon" /></a></li>
+           
           </ul>
         </div>
       </div>
@@ -78,13 +82,7 @@
           <div class="heroText">introducing <br/>an all-time protection</div>
           
         </div>
-        <div class="chatIcon">
-          <a href="#" class="d-flex flex-column text-center">
-            <img src="assets/images/chat-icon.svg" width="65" alt="chat icon"/>
-          <span>Chat with us</span>
-          </a>
-          
-        </div>
+        
         <div class="trylucky">
           <a href="#" class="d-flex justify-content-center flex-column">
             <img src="assets/images/try-luck.png" class="img-fluid" width="90" alt="try luck">
@@ -99,15 +97,15 @@
       <div class="container">
         <div class="swiper company_logo">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="assets/images/logo-1.svg" height="85px" alt="logo" /></div>
-            <div class="swiper-slide"><img src="assets/images/logo-2.svg" height="85px" alt="logo" /></div>
-            <div class="swiper-slide"><img src="assets/images/logo-3.svg" height="85px" alt="logo" /></div>
-            <div class="swiper-slide"><img src="assets/images/logo-4.svg" height="85px" alt="logo" /></div>
-            <div class="swiper-slide"><img src="assets/images/logo-5.svg" height="85px" alt="logo" /></div>
-            <div class="swiper-slide"><img src="assets/images/logo-6.svg" height="85px" alt="logo" /></div>
-            <div class="swiper-slide"><img src="assets/images/logo-1.svg" height="85px" alt="logo" /></div>
-            <div class="swiper-slide"><img src="assets/images/logo-2.svg" height="85px" alt="logo" /></div>
-            <div class="swiper-slide"><img src="assets/images/logo-3.svg" height="85px" alt="logo" /></div>
+            <div class="swiper-slide"><img src="assets/images/logo-1.svg" class="img-fluid" alt="logo" /></div>
+            <div class="swiper-slide"><img src="assets/images/logo-2.svg" class="img-fluid" alt="logo" /></div>
+            <div class="swiper-slide"><img src="assets/images/logo-3.svg" class="img-fluid" alt="logo" /></div>
+            <div class="swiper-slide"><img src="assets/images/logo-4.svg" class="img-fluid" alt="logo" /></div>
+            <div class="swiper-slide"><img src="assets/images/logo-5.svg" class="img-fluid" alt="logo" /></div>
+            <div class="swiper-slide"><img src="assets/images/logo-6.svg" class="img-fluid" alt="logo" /></div>
+            <div class="swiper-slide"><img src="assets/images/logo-1.svg" class="img-fluid" alt="logo" /></div>
+            <div class="swiper-slide"><img src="assets/images/logo-2.svg" class="img-fluid" alt="logo" /></div>
+            <div class="swiper-slide"><img src="assets/images/logo-3.svg" class="img-fluid" alt="logo" /></div>
           </div>
           <!-- <div class="swiper-pagination"></div> -->
           <div class="swiper-button-next"></div>
@@ -500,7 +498,13 @@
 
 
 
-
+  <div class="chatIcon">
+    <a href="#" class="d-flex flex-column text-center">
+      <img src="assets/images/chat-icon.svg" width="65" alt="chat icon"/>
+    <span>Chat with us</span>
+    </a>
+    
+  </div>
 
 
   <footer>
@@ -583,29 +587,38 @@
   </footer>
   <div class="copyright">© 2022, Nano Pro Labs LLC</div>
 
- 
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="assets/js/app.min.js"></script>
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script>
+   $(document).ready(function($){
+    $(window).scroll(function() {
+                if ($(this).scrollTop() > 75) {
+                    $('nav').addClass('fixed-top');                    
+                } else {
+                    $('nav').removeClass('fixed-top'); 
+                }
+            });
+   });
     var swiper = new Swiper(".company_logo", {
       slidesPerView: 6,
       spaceBetween: 15,
       breakpoints: {
         "@0.00": {
-          slidesPerView: 4,
-          spaceBetween: 10,
+          slidesPerView: 3,
+          spaceBetween: 0,
         },
         "@0.75": {
-          slidesPerView: 4,
-          spaceBetween: 20,
+          slidesPerView: 3,
+          spaceBetween: 0,
         },
         "@1.00": {
           slidesPerView: 3,
-          spaceBetween: 40,
+          spaceBetween: 10,
         },
         "@1.50": {
-          slidesPerView: 4,
-          spaceBetween: 50,
+          slidesPerView: 5,
+          spaceBetween: 15,
         },
       },
       autoplay: {
