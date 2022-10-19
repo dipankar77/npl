@@ -115,7 +115,7 @@
   display: unset;
 }
 .language a{
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 #musthead .navbar-nav .nav-item .nav-link::after{
   content: '';
