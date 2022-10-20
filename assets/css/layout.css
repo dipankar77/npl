@@ -169,32 +169,33 @@ body {
 
 .surfacesLink {
     background-color: transparent;
-position: fixed;
-display: flex;
-justify-content: start;
-align-items: center;
-z-index: 1;
-top: 82px;
-flex-wrap: wrap;
+    position: fixed;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    z-index: 0;
+    top: 82px;
+    flex-wrap: wrap;
 }
 
 .surfacesLink .links {
     width: 50px;
-height: 40px;
-display: flex;
-justify-content: center;
-align-items: center;
-flex: 1;
-box-sizing: border-box;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    box-sizing: border-box;
 }
-.surfacesLink .links.active{
+
+.surfacesLink .links.active {
     border: 2px solid #FEBE10;
 }
 
 .surfacesLink .links a {
     color: #fff;
     text-decoration: none;
-    font-size: 0.5rem;   
+    font-size: 0.5rem;
     text-shadow: 1px 1px 2px #000;
     text-align: center;
     padding: 0.2rem 0.62rem;
