@@ -368,11 +368,19 @@ body {
     font-size: 2rem;
     margin: 0.35%;
     font-family: 'Metropolis Extra Bold';
+    
+    overflow: hidden;
+}
+
+.surfacePatch a{
+    text-decoration: none;
     color: #fff;
     text-align: center;
     line-height: 1;
     text-shadow: 1px 1px 3px #000;
-    overflow: hidden;
+}
+.surfacePatch a:hover{
+    color: #000;
 }
 
 
