@@ -114,6 +114,9 @@
 .language{
   display: unset;
 }
+#musthead .navbar-brand img{
+  max-width: 90px;
+}
 .language a{
   font-size: 0.7rem;
 }
@@ -165,9 +168,10 @@
   text-decoration: underline;
 } 
 .assets-icon > div > .home-icon {
-  transform: scale(0.75);
+  transform: scale(0.85);
   padding: 0;
   width: 100%;
+  flex: 1;
 }
 #industries{
   flex-direction: column;
