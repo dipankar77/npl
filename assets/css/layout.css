@@ -1,63 +1,76 @@
-body{
-    background-color:#000;
+body {
+    background-color: #000;
     font-family: 'Metropolis Regular';
     color: #000;
 }
-.bg-black{
+
+.bg-black {
     background-color: #000;
 }
-#musthead .navbar-brand img{
+
+#musthead .navbar-brand img {
     width: 100%;
     min-width: 100px;
     max-width: 135px;
 }
-#musthead .navbar-nav .nav-item .nav-link{
+
+#musthead .navbar-nav .nav-item .nav-link {
     text-transform: uppercase;
     color: #fff;
     padding: 0;
     font-size: 0.8269rem;
 }
-#musthead .navbar-nav .nav-item .nav-link::after{
+
+#musthead .navbar-nav .nav-item .nav-link::after {
     content: '|';
     margin: 0 12px;
 }
-#musthead .navbar-nav .nav-item:last-child .nav-link::after{
+
+#musthead .navbar-nav .nav-item:last-child .nav-link::after {
     content: '';
 }
-#musthead .navbar-nav .nav-item .nav-link.active{
+
+#musthead .navbar-nav .nav-item .nav-link.active {
     color: #FEBE10;
     font-weight: 600;
 }
-#musthead .navbar-nav .nav-item .nav-link:hover{
+
+#musthead .navbar-nav .nav-item .nav-link:hover {
     color: #FEBE10;
 }
-.language{
+
+.language {
     color: #fff;
-font-size: 0.8269rem;
-border-radius: 14px;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-left: 0;
+    font-size: 0.8269rem;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
 }
-.language a{
+
+.language a {
     text-decoration: none;
     color: #fff;
 }
+
 .language a.active,
-.language a:hover{
+.language a:hover {
     color: #FEBE10;
 }
-.action_icon{
+
+.action_icon {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.action_icon li{
+
+.action_icon li {
     display: inline-block;
     margin: 0 2px;
 }
-.action_icon li a{
+
+.action_icon li a {
     width: 35px;
     height: 35px;
     background-color: #fff;
@@ -66,28 +79,33 @@ margin-left: 0;
     justify-content: center;
     align-items: center;
 }
-.action_icon li a:hover, .action_icon li a.active{
+
+.action_icon li a:hover,
+.action_icon li a.active {
     background-color: #FEBE10;
 }
 
-.logos{
-    background:url(../images/logos_bg.jpg) repeat #000;
+.logos {
+    background: url(../images/logos_bg.jpg) repeat #000;
     background-size: cover;
     height: 93px;
     position: relative;
 }
-.logo_overlay{
+
+.logo_overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.56);
+    background-color: rgba(0, 0, 0, 0.56);
 }
-.herobg{
+
+.herobg {
     background: url('../images/hero-banner.jpg') no-repeat center center;
     background-size: cover;
     min-height: 460px;
 }
-.glassbg{
+
+.glassbg {
     background: url('../images/glass-bg.jpg') no-repeat center center;
     background-size: cover;
     min-height: 460px;
@@ -97,25 +115,28 @@ margin-left: 0;
 
 
 
-.assets-icon{
+.assets-icon {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 0.3rem;    
+    padding: 0.3rem;
 }
-.assets-icon > div > .home-icon {
+
+.assets-icon>div>.home-icon {
     transform: scale(0.95);
-padding: 0.3rem 0;
-    
+    padding: 0.3rem 0;
+
 }
-.chatIcon{
+
+.chatIcon {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 0.2rem;
     border-radius: 3px;
     z-index: 1;
 }
-.heroText{
+
+.heroText {
     padding: 10rem 0;
     font-size: 3rem;
     line-height: 1.2;
@@ -127,75 +148,97 @@ padding: 0.3rem 0;
     margin: 0 auto;
 
 }
-.glassText{
+
+.glassText {
     text-transform: capitalize !important;
     font-size: 2.8rem !important;
     line-height: 1 !important;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
-.trylucky{
+.trylucky {
     position: absolute;
     top: 2rem;
-    right: 2rem;    
+    right: 2rem;
 }
-.chatIcon a:hover, .trylucky a:hover{
+
+.chatIcon a:hover,
+.trylucky a:hover {
     text-decoration: underline;
-  } 
-  .surfacesLink{  
+}
+
+.surfacesLink {
     background-color: transparent;
-position: absolute;
+position: fixed;
+display: flex;
+justify-content: start;
+align-items: center;
+z-index: 1;
+top: 82px;
+flex-wrap: wrap;
+}
+
+.surfacesLink .links {
+    width: 50px;
+height: 40px;
 display: flex;
 justify-content: center;
 align-items: center;
-z-index: 1;
-top: 0;
-flex-wrap: wrap;
-  }
-  .surfacesLink a{
-    background-color: #FEBE10;
-color: #000;
-text-decoration: none;
-font-size: 0.8rem;
-text-align: center;
-padding: 0.2rem 0.62rem;
-margin: 1px;
-  }
+flex: 1;
+box-sizing: border-box;
+}
+.surfacesLink .links.active{
+    border: 2px solid #FEBE10;
+}
+
+.surfacesLink .links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.5rem;   
+    text-shadow: 1px 1px 2px #000;
+    text-align: center;
+    padding: 0.2rem 0.62rem;
+    margin: 1px;
+}
 
 
 .swiper-button-prev {
     background-image: url('../images/arrow-l.png') !important;
     background-repeat: no-repeat;
     background-position: center;
-  }
-  
-  .swiper-button-next {
+}
+
+.swiper-button-next {
     background-image: url("../images/arrow.png") !important;
     background-repeat: no-repeat;
     background-position: center;
-  }
-  .swiper-button-next::after, .swiper-button-prev::after{
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
     content: '';
-  }
-  .storeProduct .swiper-button-prev {
-    background-image: url('../images/arrow-b-l.png')!important;
-  }
+}
 
-  .storeProduct .swiper-button-next{
-    background-image: url('../images/arrow-b-r.png')!important;
-  }
+.storeProduct .swiper-button-prev {
+    background-image: url('../images/arrow-b-l.png') !important;
+}
 
-.company_logo{
+.storeProduct .swiper-button-next {
+    background-image: url('../images/arrow-b-r.png') !important;
+}
+
+.company_logo {
     padding: 5px 0;
 }
-.company_logo img{
+
+.company_logo img {
     width: 100%;
     padding: 0.3rem;
 }
 
-#industries{
+#industries {
     background-color: #FEBE10;
-    padding: 30px 0;  
+    padding: 30px 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -203,17 +246,19 @@ margin: 1px;
     overflow: hidden;
     min-height: 387px;
 }
-#industries .verticalHeading h3{
+
+#industries .verticalHeading h3 {
     color: #000;
 }
 
 
-.indusWrap{
+.indusWrap {
     flex: 1 0 22%;
-    margin: 0 1rem; 
-    position: relative;   
+    margin: 0 1rem;
+    position: relative;
 }
-.indusCat{
+
+.indusCat {
     background: #000;
     position: relative;
     color: white;
@@ -222,7 +267,8 @@ margin: 1px;
     background-size: cover;
     background-position: center;
 }
-.indusWrap .indusCat:nth-child(2){
+
+.indusWrap .indusCat:nth-child(2) {
     background: #000;
     color: white;
     clip-path: polygon(0% 50%, 100% 6%, 100% 100%, 0% 100%);
@@ -233,23 +279,25 @@ margin: 1px;
 
 }
 
-.verticalTitle_box{
+.verticalTitle_box {
     position: absolute;
     top: 0;
     left: 0;
-    
+
 }
-.verticalTitle_box.bot{
-   right: 0;
+
+.verticalTitle_box.bot {
+    right: 0;
 }
+
 /* .verticalTitle_box.bot h3{
     padding: 8px 60px 8px 35px;
 } */
-.verticalTitle_box h3{
+.verticalTitle_box h3 {
     font-size: 1.5rem;
     font-family: 'Metropolis Black';
     text-transform: uppercase;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     margin: 0;
     padding: 11rem 0.5rem 3rem;
@@ -257,51 +305,59 @@ margin: 1px;
     text-orientation: mixed;
     transform: rotate(-180deg);
 }
-.verticalTitle_box.bot h3{    
+
+.verticalTitle_box.bot h3 {
     margin-left: 100%;
     right: 45px;
     position: relative;
     padding: 6rem 0.5rem 7rem;
     font-size: 1.5rem;
 }
-.section-title{
+
+.section-title {
     background: #FEBE10;
     width: 100%;
     padding: 1rem;
     text-align: center;
     text-transform: uppercase;
 }
-.section-title h3{
+
+.section-title h3 {
     margin-bottom: 0;
     line-height: 1;
 }
-.section-title span{
+
+.section-title span {
     font-family: 'Metropolis Semi Bold';
 }
-.title-bottom{
+
+.title-bottom {
     background-color: rgba(0, 0, 0, 0.7) !important;
     color: #FEBE10;
     font-family: 'Metropolis Extra Bold';
 }
 
-#surfacesPro{
+#surfacesPro {
     background: url('../images/surfacesProbg.jpg') no-repeat center;
     background-size: cover;
     min-height: 465px;
 }
 
-#surfaces{
+#surfaces {
     background-color: #000;
 }
-#surfaces .verticalHeading  h3{   
-    color: #000;   
-    padding:7rem 0;
+
+#surfaces .verticalHeading h3 {
+    color: #000;
+    padding: 7rem 0;
     background-color: #eee;
 }
-.surfacewrapper{
-    flex-wrap:wrap;
+
+.surfacewrapper {
+    flex-wrap: wrap;
 }
-.surfacePatch{
+
+.surfacePatch {
     flex: 1 0 24%;
     display: flex;
     justify-content: center;
@@ -318,60 +374,74 @@ margin: 1px;
 }
 
 
-#store .verticalHeading  h3{
+#store .verticalHeading h3 {
     color: #fff;
-   background-color: #000;
-   padding: 14.1rem 0;
+    background-color: #000;
+    padding: 14.1rem 0;
 }
-.storeContent{
+
+.storeContent {
     background-color: #fff;
     overflow: hidden;
 }
-.storeText{
+
+.storeText {
     text-align: center;
     color: #000;
 }
-.storeText p{
+
+.storeText p {
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 0;
 }
-.storeText h4{
+
+.storeText h4 {
     font-family: 'Metropolis Black';
     font-size: 3rem;
     text-transform: uppercase;
 }
 
-.productWrapper{
-    position: relative;    
+.productWrapper {
+    position: relative;
     margin: 2rem 0.5rem;
 }
-.proImg img{
+
+.proImg img {
     width: 100%;
 }
-.productSticker{position: absolute;
-    right: 3%;
-    top: -8%;}
-    .productInfo{padding: 1rem;
-        background-color: #000;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: #fff;}
 
-.productInfo .proTitle{
+.productSticker {
+    position: absolute;
+    right: 3%;
+    top: -8%;
+}
+
+.productInfo {
+    padding: 1rem;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.productInfo .proTitle {
     font-family: 'Feri Candi', sans-serif;
 }
-.productInfo small{
+
+.productInfo small {
     text-transform: uppercase;
     font-size: 0.6rem;
 }
-.price{
-    padding:10px 0;
+
+.price {
+    padding: 10px 0;
 }
-.cornercut{
+
+.cornercut {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -380,7 +450,8 @@ margin: 1px;
     width: 35px;
     height: 35px;
 }
-.addtocart{
+
+.addtocart {
     background-color: #FEBE10;
     font-size: 0.8rem;
     padding: 0.1rem 0.2rem;
@@ -389,107 +460,126 @@ margin: 1px;
     bottom: -10px;
     z-index: 1;
 }
-.addtocart a{
-    color: #000;
-    text-decoration: none;}
-    .addtocart a:hover{
-        text-decoration: underline;
-    } 
 
-.addtocart a span{
+.addtocart a {
+    color: #000;
+    text-decoration: none;
+}
+
+.addtocart a:hover {
+    text-decoration: underline;
+}
+
+.addtocart a span {
     padding: 0 5px;
 }
 
 
-#latest{
+#latest {
     background: url('../images/black-bg.jpg') no-repeat center;
     background-size: cover;
 }
-#latest > .strip{
+
+#latest>.strip {
     background-color: #FEBE10;
     padding: 7rem 0;
 }
 
-#latest .verticalHeading h3{   
-    color: #000;    
-    padding: 12rem 0;   
+#latest .verticalHeading h3 {
+    color: #000;
+    padding: 12rem 0;
     background-color: #FEBE10;
 }
-#latest .verticalHeading h3 span{
+
+#latest .verticalHeading h3 span {
     color: #FEBE10;
 }
-.nplBlock{
+
+.nplBlock {
     background-color: #FEBE10;
     border: 1px solid #fff;
-    
+
 }
-.nplTop{
+
+.nplTop {
     padding: 1rem;
 }
-.nplTop h2{
+
+.nplTop h2 {
     font-family: 'Metropolis Extra Bold';
-letter-spacing: -1px;
-padding-right: 20%;
+    letter-spacing: -1px;
+    padding-right: 20%;
 }
-.nplTop p{font-family: 'Metropolis Semi Bold';
+
+.nplTop p {
+    font-family: 'Metropolis Semi Bold';
     padding-left: 20%;
     text-align: center;
-margin-bottom: 0;}
-.nplMiddle{
+    margin-bottom: 0;
+}
+
+.nplMiddle {
     background-color: #fff;
     padding: 1rem;
     position: relative;
 }
-.nplMiddle p{
+
+.nplMiddle p {
     font-size: 0.7rem;
     margin-bottom: 0;
-} 
-.readmore.sm{
-    position: absolute;
-bottom: 0;
-right: 20px;
-background-color: transparent;
 }
-.readmore.sm a{
+
+.readmore.sm {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    background-color: transparent;
+}
+
+.readmore.sm a {
     font-size: 0.7rem;
 }
+
 .readmore.sm a::after {
     left: 63px;
     top: 0;
-  }
+}
 
 .nplbottom {
     position: relative;
     max-height: 150px;
     overflow: hidden;
-  }
-  .nplbottom .cornercut{
-    background-color: #FEBE10;
-  }
+}
 
-.block{
+.nplbottom .cornercut {
+    background-color: #FEBE10;
+}
+
+.block {
     width: 72%;
     color: #000;
     background-size: contain;
     background-position: 0px 1px;
     background-repeat: no-repeat;
 }
-.info-img{
+
+.info-img {
     border: 1px solid #FEBE10;
 }
 
-.block .info{
+.block .info {
     padding: 2.5rem 2rem;
     background-image: url(../images/info-bg.png);
     background-size: cover;
-    width: 39%; 
+    width: 39%;
 }
 
-.block .info h3{
-    font-family: 'Metropolis Black';   
+.block .info h3 {
+    font-family: 'Metropolis Black';
     position: relative;
 }
-.block .info h3:after{
+
+.block .info h3:after {
     content: '';
     width: 78%;
     height: 1px;
@@ -498,18 +588,22 @@ background-color: transparent;
     left: 0;
     top: 102px;
 }
-.block .info p.para{
+
+.block .info p.para {
     font-size: 0.8rem;
 }
-.block .info a{
+
+.block .info a {
     text-decoration: underline;
     color: #000;
     position: relative;
 }
-.block .info a:hover{
+
+.block .info a:hover {
     text-decoration: none;
 }
-.block .info a::after{
+
+.block .info a::after {
     content: '';
     background: url(../images/read-more-arrow.png) no-repeat left;
     width: 12px;
@@ -519,24 +613,29 @@ background-color: transparent;
     right: -16px;
 }
 
-#socilaMedia .verticalHeading h3{
+#socilaMedia .verticalHeading h3 {
     background-color: #000;
     color: #fff;
     padding: 7.471rem 0;
 }
-.smblock{
-    background-color: #FEBE10;}
 
-.sm-heading{text-align: center;
+.smblock {
+    background-color: #FEBE10;
+}
+
+.sm-heading {
+    text-align: center;
     position: absolute;
     margin: auto;
     left: 0;
-    right: 0;}
-.sm-heading p span{
+    right: 0;
+}
+
+.sm-heading p span {
     font-family: 'Metropolis Semi Bold';
 }
 
-.sm-heading span a{
+.sm-heading span a {
     background-color: #000;
     text-transform: uppercase;
     color: #FEBE10;
@@ -545,92 +644,101 @@ background-color: transparent;
     border-radius: 10px;
     padding: 0.3rem 1rem;
     border: 1px solid #fff;
-    
+
 }
-.sm-heading span a:hover{
+
+.sm-heading span a:hover {
     background-color: #000;
     color: #fff;
 }
-#socilaMedia > .strip{
+
+#socilaMedia>.strip {
     background-color: #000;
     padding: 3rem 0;
 }
 
-#feedback{
+#feedback {
     background-color: #fff;
 }
 
-#feedback .verticalHeading h3{
+#feedback .verticalHeading h3 {
     background-color: #FEBE10;
     padding: 6rem 0;
     color: #000;
 }
-.feedHead p{
+
+.feedHead p {
     font-family: 'Metropolis Extra Bold';
 }
 
-.feedgrid{
+.feedgrid {
     border-left: 1px solid #999;
     padding: 1rem;
     width: 100%;
     height: 100%;
     min-height: 250;
-    flex:1;
+    flex: 1;
     border-bottom: 1px solid #999;
 }
-.feedgrid:first-child{
+
+.feedgrid:first-child {
     border-left: none;
 }
-.feedbackdes{
+
+.feedbackdes {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.feedbackdes span{
+
+.feedbackdes span {
     color: #FEBE10;
     font-size: 2.5rem;
     font-family: 'Metropolis Black';
     line-height: 1;
 }
-.feedbackdes p{
+
+.feedbackdes p {
     line-height: 1.2;
 }
 
-.submitbtn{
+.submitbtn {
     background-color: #000;
-color: #FEBE10;
-border: 0;
-border-radius: 15px;
-font-size: 0.7rem;
-position: relative;
-top: -13px;
-padding: 0 0.8rem;   
-    }
+    color: #FEBE10;
+    border: 0;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    position: relative;
+    top: -13px;
+    padding: 0 0.8rem;
+}
 
-    .verticalHeading h3{
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
-        transform: rotate(180deg);
-        font-size: 3.5rem;
-        font-family: 'Metropolis Black';
-        text-transform: uppercase;
-        color: #fff;
-        padding: 4rem 0;
-        margin: 0;
-    }
+.verticalHeading h3 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 3.5rem;
+    font-family: 'Metropolis Black';
+    text-transform: uppercase;
+    color: #fff;
+    padding: 4rem 0;
+    margin: 0;
+}
 
-#technicalReport{   
+#technicalReport {
     background: repeating-linear-gradient(-30deg, #fff, #FEBE10 1px, #FEBE10 1px, #FEBE10 12px);
 }
-#technicalReport > .verticalHeading h3{
-    background-color: #655F54;    
+
+#technicalReport>.verticalHeading h3 {
+    background-color: #655F54;
 }
-#technicalReport > .verticalHeading h3.sec{
+
+#technicalReport>.verticalHeading h3.sec {
     color: #000;
 }
 
-#technicaReport .strip h3{
-    writing-mode:vertical-lr;   
+#technicaReport .strip h3 {
+    writing-mode: vertical-lr;
     font-size: 4.5rem;
     font-family: 'Metropolis Black';
     text-transform: uppercase;
@@ -639,10 +747,11 @@ padding: 0 0.8rem;
     margin: 0;
     padding: 23rem 0;
     height: 100%;
-   
+
 }
-#technicaReport > .headingtech h2{
-    writing-mode: vertical-rl;   
+
+#technicaReport>.headingtech h2 {
+    writing-mode: vertical-rl;
     font-size: 4.5rem;
     font-family: 'Metropolis Black';
     text-transform: uppercase;
@@ -652,36 +761,40 @@ padding: 0 0.8rem;
     padding: 23rem 0;
     height: 100%;
 }
-.report-text p{
-font-family: 'Metropolis Regular';
-font-size: 1.5rem;
-line-height: 1.2;
-text-align: center;
+
+.report-text p {
+    font-family: 'Metropolis Regular';
+    font-size: 1.5rem;
+    line-height: 1.2;
+    text-align: center;
 }
-.report-text p span{
+
+.report-text p span {
     font-weight: bold;
 }
-.reportwrap{
+
+.reportwrap {
     text-align: center;
     padding: 0 2.4rem;
     line-height: 1.3;
 }
-.reportwrap p{
+
+.reportwrap p {
     font-size: 1.3rem;
     font-family: 'Metropolis Light';
 }
 
-#rational{
+#rational {
     background: url('../images/sectionBg.jpg') no-repeat center;
     background-size: cover;
     min-height: 460px;
 }
 
-#rational .verticalHeading h3{
+#rational .verticalHeading h3 {
     background-color: #000;
 }
 
-.rationalhead{
+.rationalhead {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -689,14 +802,15 @@ text-align: center;
     flex-direction: column;
     color: #fff;
 }
-.rationalhead p{
+
+.rationalhead p {
     font-size: 3.5rem;
     font-family: 'Metropolis Light';
     text-align: center;
 }
 
 
-#relevant .verticalHeading h3 {    
+#relevant .verticalHeading h3 {
     background-color: #FEBE10 !important;
     color: #000;
     padding: 8.9rem 0;
@@ -707,11 +821,12 @@ text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;    
+    flex: 1;
     min-height: 589px;
     background-color: #eee;
 }
-.relBlock h2{
+
+.relBlock h2 {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     font-family: 'Metropolis Black';
@@ -742,30 +857,35 @@ text-align: center;
 }
 
 
-.applicator{
+.applicator {
     width: 100%;
     position: relative;
     background: url('../images/applicationbg.jpg') no-repeat center center #655F54;
     background-size: cover;
-    min-height: 556px;      
+    min-height: 556px;
 }
-.applicator.home{ background: url(../images/application.jpg) no-repeat center center;
+
+.applicator.home {
+    background: url(../images/application.jpg) no-repeat center center;
     background-repeat: no-repeat;
     background-size: cover;
-    justify-content:space-between}
-.applicator .verticalHeading h3{
+    justify-content: space-between
+}
+
+.applicator .verticalHeading h3 {
     background-color: rgb(0, 0, 0);
     color: rgb(254, 190, 16);
     padding: 7.3rem 0;
 }
-.applicator .verticalHeading h3.home{
+
+.applicator .verticalHeading h3.home {
     background-color: transparent;
     color: #fff;
     text-align: end;
     padding: 5.2rem 0.5rem;
 }
 
-.application-content{
+.application-content {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -773,32 +893,36 @@ text-align: center;
 
 
 
-.verticalHeading h3.sec{
+.verticalHeading h3.sec {
     background-color: transparent !important;
     padding: 0 !important;
     color: #fff;
 }
-.application-content{
+
+.application-content {
     display: flex;
-    text-align: center;    
+    text-align: center;
     justify-content: center;
     align-items: center;
     background-color: #FEBE10;
 }
+
 /* .application-content.home{
     width: 29%;
     margin: 12rem 5rem 0;
 } */
-.application-content.home .apptext{
+.application-content.home .apptext {
     color: #FEBE10;
     margin-top: 3rem;
 }
-.application-content.home p{
+
+.application-content.home p {
     color: #fff;
     font-size: 1.2rem;
     line-height: 1.2;
 }
-.application{
+
+.application {
     background: url('../images/application-mob-bg.png') no-repeat center;
     min-height: 350px;
     display: flex;
@@ -806,49 +930,57 @@ text-align: center;
     align-items: center;
     flex-direction: column;
 }
-.application .cricle{
+
+.application .cricle {
     display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-border: 3px dotted #FEBE10;
-width: 125px;
-height: 125px;
-margin: 2rem 0;
-border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px dotted #FEBE10;
+    width: 125px;
+    height: 125px;
+    margin: 2rem 0;
+    border-radius: 50%;
 }
-.selectCountry{
+
+.selectCountry {
     width: 100%;
 }
-.selectCountry p{
+
+.selectCountry p {
     font-family: 'Metropolis Semi Bold';
     text-transform: uppercase;
 }
-.btn-custom{
+
+.btn-custom {
     background-color: #000;
-border: 1px solid #fff;
-color: #FEBE10;
-padding: 0.05rem 1rem;
-border-radius: 1rem;
-margin: 0.5rem 0;
-font-size: 0.7rem;
+    border: 1px solid #fff;
+    color: #FEBE10;
+    padding: 0.05rem 1rem;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+    font-size: 0.7rem;
 }
-.selectform input, .selectform select{
+
+.selectform input,
+.selectform select {
     flex: 1 0 25%;
-margin: 1%;
-border: 1px solid #231F20;
-background-color: #fff;
-color: #000;
-padding: 0.15rem;
+    margin: 1%;
+    border: 1px solid #231F20;
+    background-color: #fff;
+    color: #000;
+    padding: 0.15rem;
 }
-.cricleimg{
+
+.cricleimg {
     width: 240px;
     height: 240px;
     border: 3px dashed #FEBE10;
     border-radius: 50%;
     overflow: hidden;
 }
-.apptext{
+
+.apptext {
     font-size: 1.85rem;
     font-family: 'Metropolis Black';
     color: #fff;
@@ -859,27 +991,32 @@ padding: 0.15rem;
     padding: 0 1rem 3rem;
 }
 
-.readmore{
+.readmore {
     background-color: #FEBE10;
     display: block;
     position: relative;
-    padding: 6px 30px; 
+    padding: 6px 30px;
 }
-.readmore.click{
+
+.readmore.click {
     background-color: transparent;
 }
-.readmore.click a{
+
+.readmore.click a {
     color: #fff;
 }
-.readmore.click a::after{
+
+.readmore.click a::after {
     background: url(../images/click-arrow.png) no-repeat;
 }
- .readmore a{
+
+.readmore a {
     color: #000;
     text-decoration: underline;
     position: relative;
 }
- .readmore a::after{
+
+.readmore a::after {
     left: 90px;
     content: '';
     position: absolute;
@@ -889,90 +1026,103 @@ padding: 0.15rem;
     top: 2px;
 }
 
-.feedgrid textarea{
+.feedgrid textarea {
     height: 135px;
 }
 
-#glassFeature{
+#glassFeature {
     background: url('../images/bgsection.png') #000 no-repeat center;
     background-size: cover;
 }
-.featurhead{
+
+.featurhead {
     background-color: #000;
     border-top: 2px solid #FEBE10;
     text-align: center;
     position: relative;
 }
-.featurhead h2{
+
+.featurhead h2 {
     color: #fff;
     padding: 0.5rem 6rem;
     font-family: 'Metropolis Extra Bold';
-    
+
 }
-.featurhead h3{
+
+.featurhead h3 {
     padding: 0.35rem 0;
     background-color: #FEBE10;
     color: #000;
     font-family: 'Metropolis Bold';
 }
-.featurhead span{
+
+.featurhead span {
     color: #FEBE10;
-border: 2px solid #fff;
-position: absolute;
-bottom: 25px;
-left: 45px;
-padding: 0.4rem 1rem;
-background-color: #000;
-font-size: 2rem;
-font-family: 'Metropolis Bold';
-line-height: 1;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 25px;
+    left: 45px;
+    padding: 0.4rem 1rem;
+    background-color: #000;
+    font-size: 2rem;
+    font-family: 'Metropolis Bold';
+    line-height: 1;
 }
 
-.featureInfo{
+.featureInfo {
     padding: 1rem;
 }
-.featureInfo p{
+
+.featureInfo p {
     color: #FEBE10;
     font-weight: bold;
 }
-.featurepoint p{
+
+.featurepoint p {
     margin-bottom: 0.5rem;
 }
-.featurepoint ul{
+
+.featurepoint ul {
     list-style-image: url('../images/listing-icon.png');
-list-style-position: inside;
-margin: 0 0 0.5rem 0;
-padding-left: 1rem;
+    list-style-position: inside;
+    margin: 0 0 0.5rem 0;
+    padding-left: 1rem;
 
 }
-.featurepoint ul li{
+
+.featurepoint ul li {
     color: #fff;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
-.cricularImg{
-width: 120px;
-height: 120px;
-margin-bottom: 1.5rem;
-border: 2px solid #fff;
-border-radius: 50%;
-overflow: hidden;}
-.cricularImg img{
+.cricularImg {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1.5rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cricularImg img {
     height: 100%;
 }
 
-.pdficon img{
+.pdficon img {
     width: 50px;
-    margin-right: 1rem;
+    margin-right: 0.3rem;
 }
-.pdficon p{
+
+.pdficon p {
     color: #fff;
     font-size: 0.7rem;
 }
-.productWrap{
+
+.productWrap {
     background-color: #fff;
 }
-.product-info{
+
+.product-info {
     padding: 0.9rem 0;
     display: flex;
     justify-content: center;
@@ -981,53 +1131,64 @@ overflow: hidden;}
     color: #696969;
     width: 65%;
 }
-.product-info h3{
-   
-line-height: 0.9;
-text-transform: uppercase;
-margin: 0;
-text-align: center;
-font-size: 1.2rem ;
+
+.product-info h3 {
+
+    line-height: 0.9;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
 }
-.product-info p{
+
+.product-info p {
     font-size: 0.65rem;
-text-align: center;
-margin-bottom: 0;
-line-height: 1.2;
-padding: 0 0.5rem;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 1.2;
+    padding: 0 0.5rem;
 }
-.rate{
+
+.rate {
     position: relative;
     text-transform: uppercase;
     font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 0.35rem;
 }
-.rate span{ font-family: 'Metropolis Bold';}
-.rate::before, .rate::after{
-    content: '';
-position: absolute;
-width: 80%;
-height: 1px;
-top: 0;
-background-color: rgba(0,0,0,0.2);
-left: 24px;
+
+.rate span {
+    font-family: 'Metropolis Bold';
 }
-.rate::after{
+
+.rate::before,
+.rate::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    left: 24px;
+}
+
+.rate::after {
     bottom: 0;
     top: unset;
-    
+
 }
-.qty button{
+
+.qty button {
     border: 1px solid #ccc;
-width: 20px;
-height: 20px;
-background-color: transparent;
-display: flex;
-justify-content: center;
-align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.qty input{
+
+.qty input {
     width: 20px;
     height: 20px;
     border-radius: 0;
@@ -1036,7 +1197,8 @@ align-items: center;
     text-align: center;
     border: 1px solid #ccc;
 }
-.btn-cart{
+
+.btn-cart {
     background-color: #FEBE10;
     text-align: center;
     color: #000;
@@ -1047,11 +1209,12 @@ align-items: center;
 
 
 
-footer{
+footer {
     background-color: #000;
     min-height: 345px;
 }
-.footerLogo{
+
+.footerLogo {
     position: relative;
     background: url('../images/footer-bg.jpg') no-repeat center center;
     background-size: cover;
@@ -1061,20 +1224,22 @@ footer{
     height: 100%;
     min-height: 350px;
 }
-.footerbg-overlay{
+
+.footerbg-overlay {
     position: absolute;
     width: 100%;
-    background-color: rgba(0,0,0,0.56);
+    background-color: rgba(0, 0, 0, 0.56);
     height: 100%;
 }
 
-.footerLinks h3{
+.footerLinks h3 {
     font-family: 'Metropolis Black';
     color: #FEBE10;
     text-transform: uppercase;
-    position: relative;    
+    position: relative;
 }
-.footerLinks h3::after{
+
+.footerLinks h3::after {
     content: '';
     position: absolute;
     width: 75%;
@@ -1084,49 +1249,60 @@ footer{
     bottom: 0;
 
 }
-.footerLinks ul{
+
+.footerLinks ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-.footerLinks ul li{
+
+.footerLinks ul li {
     font-size: 0.7rem;
     padding: 5px 0;
 }
-.footerLinks ul li::before{
+
+.footerLinks ul li::before {
     content: '\2022';
     color: #FEBE10;
     margin-left: 0rem;
     padding-right: 0.5rem;
 }
-.footerLinks ul li a{
+
+.footerLinks ul li a {
     color: #fff;
     text-decoration: underline;
-   
+
 }
-.footerLinks ul li a:hover{
+
+.footerLinks ul li a:hover {
     color: #FEBE10;
     text-decoration: none;
 }
-.subscribe{
+
+.subscribe {
     padding: 1rem 0;
     border-bottom: 1px solid #666;
 }
-.subscribe p{
+
+.subscribe p {
     color: #FEBE10;
     font-size: 0.9rem;
     margin-bottom: 0;
 }
-.subscribe form{
+
+.subscribe form {
     padding: 0 5rem;
 }
-.subscribe form input{
+
+.subscribe form input {
     font-size: 0.8rem;
 }
-.subscribe input[type="text"]{
+
+.subscribe input[type="text"] {
     padding: 2px;
 }
-.subscribe button{  
+
+.subscribe button {
     background-color: #FEBE10;
     color: #000;
     margin: 0.5rem 0;
@@ -1134,21 +1310,26 @@ footer{
     border-radius: 15px;
     border: none;
 }
-.subscribe button:hover{
+
+.subscribe button:hover {
     background-color: #fff;
 }
+
 .social-icon {
     border-bottom: 1px solid #666;
     padding: 0.5rem;
     margin: 0 1rem;
-  }
-.social-icon a{
+}
+
+.social-icon a {
     padding-right: 7px;
 }
-.certify{    
+
+.certify {
     color: #fff;
 }
-.copyright{
+
+.copyright {
     padding: 1rem 0;
     background-color: #FEBE10;
     color: #000;

@@ -73,17 +73,17 @@
 
         <div class="d-flex justify-content-center flex-column">
           <img src="assets/images/glass-bg.jpg" />
-          <div class="heroText glassText position-absolute">Fabric Surfaces Protection</div>
+          <div class="heroText glassText position-absolute">Glass Surfaces Protection</div>
         </div>
         <div class="surfacesLink">
-          <a href="#">Textile</a>
-          <a href="#">Leather</a>
-          <a href="#">Glass</a>
-          <a href="#">Wood</a>
-          <a href="#">Steel</a>
-          <a href="#">Metal</a>
-          <a href="#">Stone</a>
-          <a href="#">Concrete</a>
+          <div class="links" style="background:url('assets/images/fabric.jpg'); background-size: cover;"><a href="#">Textile</a></div>
+          <div class="links" style="background:url('assets/images/leather.jpg');background-size: cover"><a href="#">Leather</a></div>
+          <div class="links active" style="background:url('assets/images/glass.jpg');background-size: cover"><a href="#">Glass</a></div>
+          <div class="links" style="background:url('assets/images/wood.jpg');background-size: cover"><a href="#">Wood</a></div>
+          <div class="links" style="background:url('assets/images/steel.jpg');background-size: cover"><a href="#">Steel</a></div>
+          <div class="links" style="background:url('assets/images/metal.jpg');background-size: cover"><a href="#">Metal</a></div>
+          <div class="links" style="background:url('assets/images/stone.png');background-size: cover"><a href="#">Stone</a></div>
+          <div class="links" style="background:url('assets/images/concrete.jpg');background-size: cover"><a href="#">Concrete</a></div>
         </div>
 
       </div>
@@ -355,7 +355,7 @@
   <script>
     $(document).ready(function ($) {
       $(window).scroll(function () {
-        if ($(this).scrollTop() > 75) {
+        if ($(this).scrollTop() > 25) {
           $('nav').addClass('fixed-top');
         } else {
           $('nav').removeClass('fixed-top');
