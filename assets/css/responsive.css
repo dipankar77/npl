@@ -133,6 +133,7 @@
 .logos{
   height: 50px;
 }
+#heroarea{margin-top: 82px;}
 .herobg{
   background: url('../images/mobile-bg.jpg') no-repeat center;
   background-size: cover;
