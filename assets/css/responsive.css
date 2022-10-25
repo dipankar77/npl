@@ -207,6 +207,30 @@
   padding: 12rem 14%;
   clip-path: polygon(0% 42%, 100% 5%, 98% 100%, 0% 100%);
 }
+
+.surfacesLink {  
+  top: 82px;
+ }
+
+.surfacesLink .links {
+  width: 50px;
+  height: 40px; 
+}
+
+.surfacesLink .links.active {
+  border: 2px solid #FEBE10;
+}
+.surfacesLink .links a{
+  font-size: 0.5rem;
+}
+.featureListing{
+  flex: 1;
+  margin: 0
+}
+.mr-top{
+  margin-top: 0;
+}
+
 #surfaces .verticalHeading h3 {       
   padding: 0.5rem 10rem;      
   

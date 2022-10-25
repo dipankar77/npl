@@ -72,7 +72,11 @@
       <div class="card-img-overlay position-relative p-0">
 
         <div class="d-flex justify-content-center flex-column">
-          <img src="assets/images/glass-bg.jpg" />
+          <picture>
+            <source media="(min-width: 700px)" srcset="assets/images/glass-cover.jpg">     
+            <!-- <source media="(min-width: 450px)" srcset="assets/images/glass-cover.jpg">      -->
+            <img src="assets/images/glass-bg.jpg" alt="glass" style="width:100%;">
+        </picture>
           <div class="heroText glassText position-absolute">Glass Surfaces Protection</div>
         </div>
         <div class="surfacesLink">
@@ -90,7 +94,7 @@
     </div>
   </section>
   <main>
-    <section id="glassFeature">
+    <section id="glassFeature" class="d-flex justify-content-between flex-column flex-md-row">
       <div class="featureListing">
         <div class="featurhead">
           <h2>Glass Surfaces
@@ -145,24 +149,24 @@
           </div>
         </div>
 
-        </p>
-      </div>
-      <div class="productWrap d-flex justify-content-between align-items-start">
-        <div class="product-info">
-          <h3>Glass Surfaces <br>Anti-Fog (GL702)</h3>
-          <p>This is sample text only and will be replaced
-            with actual text after this is approved.</p>
-            <small>400ml</small>
-            <div class="rate">sar <span>299.00</span></div>
-            <div class="qty mb-1 d-flex justify-content-center align-items-center">
-              <button>-</button>
-              <input type="text" value="1">
-              <button>+</button>
-            </div>
-            <div class="mt-2"><a href="#" class="btn-cart">Add to cart</a></div>
+        <div class="productWrap mr-top d-flex justify-content-between align-items-start">
+          <div class="product-info">
+            <h3>Glass Surfaces <br>Anti-Fog (GL702)</h3>
+            <p>This is sample text only and will be replaced
+              with actual text after this is approved.</p>
+              <small>400ml</small>
+              <div class="rate">sar <span>299.00</span></div>
+              <div class="qty mb-1 d-flex justify-content-center align-items-center">
+                <button>-</button>
+                <input type="text" value="1">
+                <button>+</button>
+              </div>
+              <div class="mt-2"><a href="#" class="btn-cart">Add to cart</a></div>
+          </div>
+          <div class="product-img"><img src="assets/images/product-1.jpg" class="img-fluid" alt="product"></div>
         </div>
-        <div class="product-img"><img src="assets/images/product-1.jpg" class="img-fluid" alt="product"></div>
       </div>
+      
       <div class="featureListing">
         <div class="featurhead">
           <h2>Glass Surfaces
@@ -228,25 +232,25 @@
           </div>
         </div>
 
-        </p>
-      </div>
-      <div class="productWrap d-flex justify-content-between align-items-start">
-        <div class="product-info">
-          <h3>Glass Surfaces<br>
-            protection (GL704)</h3>
-          <p>This is sample text only and will be replaced
-            with actual text after this is approved.</p>
-            <small>400ml</small>
-            <div class="rate">sar <span>299.00</span></div>
-            <div class="qty mb-1 d-flex justify-content-center align-items-center">
-              <button>-</button>
-              <input type="text" value="1">
-              <button>+</button>
-            </div>
-            <div class="mt-2"><a href="#" class="btn-cart">Add to cart</a></div>
+        <div class="productWrap d-flex justify-content-between align-items-start">
+          <div class="product-info">
+            <h3>Glass Surfaces<br>
+              protection (GL704)</h3>
+            <p>This is sample text only and will be replaced
+              with actual text after this is approved.</p>
+              <small>400ml</small>
+              <div class="rate">sar <span>299.00</span></div>
+              <div class="qty mb-1 d-flex justify-content-center align-items-center">
+                <button>-</button>
+                <input type="text" value="1">
+                <button>+</button>
+              </div>
+              <div class="mt-2"><a href="#" class="btn-cart">Add to cart</a></div>
+          </div>
+          <div class="product-img"><img src="assets/images/product-1.jpg" class="img-fluid" alt="product"></div>
         </div>
-        <div class="product-img"><img src="assets/images/product-1.jpg" class="img-fluid" alt="product"></div>
       </div>
+      
 
     </section>
 
@@ -278,7 +282,7 @@
             <img src="assets/images/logo.svg" width="180" class="img-flui position-relative" alt="logo">
           </div>
         </div>
-        <div class="col-md-8 col-lg-8 col-12 pt-5">
+        <div class="col-md-8 col-lg-8 col-12 pt-5 px-md-5 px-3">
           <div class="footerAction py-4">
             <div class="row">
               <div class="col-md-4 col-lg-4 col-6">
@@ -306,7 +310,7 @@
                 </div>
               </div>
               <div class="col-md-4 col-lg-4 col-12">
-                <div class="footerLinks socilaMedia text-center py-4">
+                <div class="footerLinks socilaMedia text-center py-md-0 py-4">
                   <h3>social media</h3>
                   <div class="social-icon d-flex justify-content-center">
                     <a href="#" target="_blank"><img src="assets/images/fb.svg" width="20" alt="sfb"></a>
@@ -322,14 +326,14 @@
                       <button type="submit">subscribe</button>
                     </form>
                   </div>
-                  <div class="row mt-3">
-                    <div class="col">
+                  <div class="row mt-3 d-md-none d-flex">
+                    <div class="col-6">
                       <div class="certify">
                         <Small>Certified by:</small>
                         <img src="assets/images/certify.png" class="img-fluid" alt="logo">
                       </div>
                     </div>
-                    <div class="col">
+                    <div class="col-6">
                       <div class="certify">
                         <small>Complies with:</small>
                         <img src="assets/images/compile.png" class="img-fluid" alt="logo">
@@ -339,6 +343,20 @@
 
 
                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3 d-none d-md-flex">
+              <div class="col">
+                <div class="certify">
+                  <Small>Certified by:</small>
+                  <img src="assets/images/certify.png" class="img-fluid" alt="logo">
+                </div>
+              </div>
+              <div class="col">
+                <div class="certify">
+                  <small>Complies with:</small>
+                  <img src="assets/images/compile.png" class="img-fluid" alt="logo">
                 </div>
               </div>
             </div>

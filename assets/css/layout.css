@@ -108,41 +108,44 @@ body {
 }
 
 .glassbg {
-    background: url('../images/glass-bg.jpg') no-repeat center center;
+    background: unset;
     background-size: cover;
-    min-height: 460px;
+    
 }
-
-
-
-
-
 .assets-icon {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 0.3rem;
+    padding: 0;
+    width: 100%;
 }
 
 .assets-icon>div>.home-icon {
     transform: scale(0.95);
-    padding: 0.3rem 0;
+    padding: 0.3rem;
 
 }
 
 .chatIcon {
     position: fixed;
     bottom: 2rem;
-    right: 2rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    left: 2rem;
+    
     padding: 0.2rem;
     border-radius: 3px;
     z-index: 1;
 }
 .chatIcon a{
     font-size: 13px;
-    color: #fff;
+    color: #fff;    
     text-decoration: none;
     margin: 0 auto;
     align-items: center;
+}
+.chatIcon a span {
+    background-color: rgba(0, 0, 0, 0.5);
+    line-height: 1;
+    padding: 0.1rem 0.3rem;
+    border-radius: 7px;
+    font-size: 0.7rem;
 }
 
 .heroText {
@@ -162,12 +165,14 @@ body {
     text-transform: capitalize !important;
     font-size: 2.8rem !important;
     line-height: 1 !important;
+    padding-top: 9rem;
+    width: 100%;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .trylucky {
     position: absolute;
-    top: 2rem;
+    top: 8rem;
     right: 2rem;
 }
 .trylucky a {
@@ -189,19 +194,19 @@ body {
 }
 
 .surfacesLink {
-    background-color: transparent;
+    background-color: #000;
     position: fixed;
     display: flex;
     justify-content: start;
     align-items: center;
     z-index: 1;
-    top: 82px;
-    flex-wrap: wrap;
+    top: 133px;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
-.surfacesLink .links {
-    width: 50px;
-    height: 40px;
+.surfacesLink .links {    
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,7 +221,8 @@ body {
 .surfacesLink .links a {
     color: #fff;
     text-decoration: none;
-    font-size: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Metropolis Bold';
     text-shadow: 1px 1px 2px #000;
     text-align: center;
     padding: 0.2rem 0.62rem;
@@ -1056,6 +1062,13 @@ body {
     background: url('../images/bgsection.png') #000 no-repeat center;
     background-size: cover;
 }
+.featureListing{
+    flex: 1 0 45%;
+    margin: 0px 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
 
 .featurhead {
     background-color: #000;
@@ -1142,6 +1155,9 @@ body {
 
 .productWrap {
     background-color: #fff;
+}
+.mr-top{
+    margin-top: 145px;
 }
 
 .product-info {
