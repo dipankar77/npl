@@ -174,6 +174,9 @@
   width: 100%;
   flex: 1;
 }
+.infogra img{
+  width: 100%;
+}
 #industries{
   flex-direction: column;
   padding: 0;
@@ -221,9 +224,9 @@
 .storeText h4{
   font-size: 1.5rem;
 }
-.applicator.home{
+/* .applicator.home{
   background: url('../images/application-mob-bg.png') center center;
-}
+} */
 .applicator .verticalHeading h3.home {
   text-align: center;
   padding: 1.2rem 0;
@@ -233,10 +236,26 @@
   margin-top: 0rem;
   font-size: 1.5rem;
 }
+.application {
+  background: unset;
+  width: 100%;
+  padding-top: 0;
+}
+.application .apptext {
+  background: url('../images/application-mob-bg.png') no-repeat center;
+  min-height: 350px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
 /* .application-content.home {
   width: 80%;
   margin: 95px;
 } */
+.nplBlock {
+  margin: 0;
+}
 #latest .verticalHeading h3 {
   padding: 1rem 4rem;
   font-size: 1.5rem;
@@ -251,6 +270,15 @@
 .block .info h3::after {
   top: 88px;
 }
+.feedgrid {
+  
+  border-bottom: 1px solid #999;
+}
+
+.feedgrid:first-child {
+  border-left: none;
+}
+
 #socilaMedia .verticalHeading h3 {
   padding: 1rem 5.4rem;
   font-size: 2rem;

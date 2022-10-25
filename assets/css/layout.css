@@ -19,7 +19,8 @@ body {
     text-transform: uppercase;
     color: #fff;
     padding: 0;
-    font-size: 0.8269rem;
+    font-size: 1rem;
+    margin: 0.5rem 0;
 }
 
 #musthead .navbar-nav .nav-item .nav-link::after {
@@ -87,7 +88,7 @@ body {
 }
 
 .logos {
-    background: url(../images/logos_bg.jpg) repeat #000;
+    background: url(../images/hero-banner.jpg) repeat #000;
     background-size: cover;
     height: 93px;
     position: relative;
@@ -136,6 +137,13 @@ body {
     border-radius: 3px;
     z-index: 1;
 }
+.chatIcon a{
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 auto;
+    align-items: center;
+}
 
 .heroText {
     padding: 10rem 0;
@@ -162,10 +170,22 @@ body {
     top: 2rem;
     right: 2rem;
 }
+.trylucky a {
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+}
 
 .chatIcon a:hover,
 .trylucky a:hover {
     text-decoration: underline;
+}
+.infogra{
+    margin: 0 auto;
+    text-align: center;
+}
+.infogra img{
+    width: 35%;
 }
 
 .surfacesLink {
@@ -508,7 +528,7 @@ body {
 .nplBlock {
     background-color: #FEBE10;
     border: 1px solid #fff;
-
+    margin: 0 6rem;
 }
 
 .nplTop {
@@ -681,20 +701,14 @@ body {
     font-family: 'Metropolis Extra Bold';
 }
 
-.feedgrid {
-    border-left: 1px solid #999;
-    padding: 1rem;
-    width: 100%;
-    height: 100%;
-    min-height: 250;
-    flex: 1;
-    border-bottom: 1px solid #999;
+.feedgrid{   
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  min-height: 250;
+  flex: 1;
+    border-bottom: none;
 }
-
-.feedgrid:first-child {
-    border-left: none;
-}
-
 .feedbackdes {
     display: flex;
     justify-content: space-around;
@@ -933,12 +947,10 @@ body {
 }
 
 .application {
-    background: url('../images/application-mob-bg.png') no-repeat center;
-    min-height: 350px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
+    background: unset;
+    width: 40%;
+    padding-top: 3rem;
+   
 }
 
 .application .cricle {
