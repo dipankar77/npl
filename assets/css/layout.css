@@ -100,7 +100,7 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.56);
 }
-#heroarea{margin-top: 133px;}
+#heroarea{margin-top: 98px;}
 .herobg {
     background: url('../images/hero-banner.jpg') no-repeat center center;
     background-size: cover;
@@ -200,7 +200,7 @@ body {
     justify-content: start;
     align-items: center;
     z-index: 1;
-    top: 133px;
+    top: 98px;
     flex-wrap: nowrap;
     width: 100%;
 }
@@ -534,7 +534,7 @@ body {
 .nplBlock {
     background-color: #FEBE10;
     border: 1px solid #fff;
-    margin: 0 6rem;
+    margin: 0 5rem;
 }
 
 .nplTop {
@@ -1329,7 +1329,7 @@ footer {
 }
 
 .subscribe form {
-    padding: 0 5rem;
+    padding: 0 2rem;
 }
 
 .subscribe form input {

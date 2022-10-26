@@ -2,374 +2,510 @@
 /* No media query for `xs` since this is the default in Bootstrap*/
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (max-width: 320.98px) and (max-width: 575.98px) { 
-  .language{
-      display: unset;
+@media (max-width: 320.98px) and (max-width: 575.98px) {
+  .language {
+    display: unset;
   }
-  .navbar-dark .navbar-brand{
+
+  .navbar-dark .navbar-brand {
     margin: 0 auto;
   }
-  .assets-icon > div > .home-icon {
+
+  .assets-icon>div>.home-icon {
     padding: 0.3rem 5px;
     margin-left: 0;
-}
-.trylucky {
-  padding: 0 4rem;
-  width: auto;
-  transform: scale(1) !important;  
-}
-  #industries{
-      flex-direction: column;
   }
-  #industries .verticalHeading{
-      margin: 0 auto;
+
+  .trylucky {
+    padding: 0 4rem;
+    width: auto;
+    transform: scale(1) !important;
   }
- .verticalHeading h3{
-      writing-mode:unset;
-      text-orientation: mixed;
-      transform:unset;
-      padding: 1rem 5rem;
-      font-size: 1.5rem;
+
+  #industries {
+    flex-direction: column;
   }
-  .verticalTitle_box h3{padding: 4.5rem 9px;}
-  .indusWrap{
-      width: 65%;
-      margin-bottom: 2rem;
+
+  #industries .verticalHeading {
+    margin: 0 auto;
   }
-  .indusWrap .indusCat:nth-child(2){
-      padding: 12rem 14%;
-      clip-path: polygon(0% 42%, 100% 5%, 98% 100%, 0% 100%);
+
+  .verticalHeading h3 {
+    writing-mode: unset;
+    text-orientation: mixed;
+    transform: unset;
+    padding: 1rem 5rem;
+    font-size: 1.5rem;
   }
-  #surfaces .verticalHeading h3 {       
-      padding: 0.5rem 10rem;      
-      
-    }
-    .surfacePatch {
-      flex: 1 0 34%;
-    }
-    #store .verticalHeading h3 {
-      padding: 1.1rem 13rem;
-    }
-    .storeText p{
-      font-size: 1rem;
-    }
-    .storeText h4{
-      font-size: 2rem;
-    }
-    .applicator .verticalHeading h3.home {
-      text-align: center;
-      padding: 1.2rem 0;
-      font-size: 2rem;
-    }
-    .application-content.home {
-      width: 80%;
-      margin: 95px;
-    }
-    #latest .verticalHeading h3 {
-      padding: 1rem 4rem;
-      font-size: 2rem;
-    }
-    .text-white {
-      font-size: 1.2rem !important;
-    }
-    .block .info{
-      width: 100%;
-      padding: 1.5rem 1rem;
-    }
-    .block .info h3::after {
-      top: 88px;
-    }
-    #socilaMedia .verticalHeading h3 {
-      padding: 1rem 5.4rem;
-      font-size: 2rem;
-    }
-    #feedback .verticalHeading h3 {
-      padding: 1rem 5rem;
-    }
-    .feedgrid{
-      border-left: 0;
-    }
-    .rationalhead p {
-      font-size: 2.5rem;}
-      #relevant .verticalHeading h3 {
-          padding: 1rem 8rem;
-        }
-        .relBlock{
-          width: 100%;
-        }
-        .applicator .verticalHeading h3 {
-          padding: 1rem 7.1rem;
-          text-align: center;
-        }
-        .application-content{
-          width: 100%;
-        }
-        #rational{
-          min-height: 300px;
-        }
+
+  .verticalTitle_box h3 {
+    padding: 4.5rem 9px;
+  }
+
+  .indusWrap {
+    width: 65%;
+    margin-bottom: 2rem;
+  }
+
+  .indusWrap .indusCat:nth-child(2) {
+    padding: 12rem 14%;
+    clip-path: polygon(0% 42%, 100% 5%, 98% 100%, 0% 100%);
+  }
+
+  #surfaces .verticalHeading h3 {
+    padding: 0.5rem 10rem;
+
+  }
+
+  .surfacePatch {
+    flex: 1 0 34%;
+  }
+
+  #store .verticalHeading h3 {
+    padding: 1.1rem 13rem;
+  }
+
+  .storeText p {
+    font-size: 1rem;
+  }
+
+  .storeText h4 {
+    font-size: 2rem;
+  }
+
+  .applicator .verticalHeading h3.home {
+    text-align: center;
+    padding: 1.2rem 0;
+    font-size: 2rem;
+  }
+
+  .application-content.home {
+    width: 80%;
+    margin: 95px;
+  }
+
+  #latest .verticalHeading h3 {
+    padding: 1rem 4rem;
+    font-size: 2rem;
+  }
+
+  .text-white {
+    font-size: 1.2rem !important;
+  }
+
+  .block .info {
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+  .block .info h3::after {
+    top: 88px;
+  }
+
+  #socilaMedia .verticalHeading h3 {
+    padding: 1rem 5.4rem;
+    font-size: 2rem;
+  }
+
+  #feedback .verticalHeading h3 {
+    padding: 1rem 5rem;
+  }
+
+  .feedgrid {
+    border-left: 0;
+  }
+
+  .rationalhead p {
+    font-size: 2.5rem;
+  }
+
+  #relevant .verticalHeading h3 {
+    padding: 1rem 8rem;
+  }
+
+  .relBlock {
+    width: 100%;
+  }
+
+  .applicator .verticalHeading h3 {
+    padding: 1rem 7.1rem;
+    text-align: center;
+  }
+
+  .application-content {
+    width: 100%;
+  }
+
+  #rational {
+    min-height: 300px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up)*/
-@media (max-width: 767.98px) { 
-.language{
-  display: unset;
-}
-#musthead .navbar-brand img{
-  max-width: 90px;
-}
-.language a{
-  font-size: 0.7rem;
-}
-#musthead .navbar-nav .nav-item .nav-link::after{
-  content: '';
-}
-.navbar-dark .navbar-brand{
-  margin: 0 auto;
-  
-}
-.navbar-dark .navbar-toggler{
-  border-color: transparent;
-}
-.logos{
-  height: 50px;
-}
-#heroarea{margin-top: 82px;}
-.herobg{
-  background: url('../images/mobile-bg.jpg') no-repeat center;
-  background-size: cover;
-  min-height: 570px;
-}
-.card-img-overlay{
-  padding: 0;
-}
-.assets-icon{
-  width: 100%;
-  background-color: rgba(0,0,0,0.5);
-}
-.trylucky {
-  top: 6rem;
-  right: 1rem;
-}
-.trylucky a{
-  font-size: 13px;
-  text-decoration: none;
-  color: #fff
-}
-.chatIcon{
-  bottom:1rem;
-  left: 1rem;
-  right: unset;
-}
-.chatIcon a {
-  font-size: 11px;
-  text-decoration: none;
-  color: #fff
-}
-.chatIcon a:hover, .trylucky a:hover{
-  text-decoration: underline;
-} 
-.assets-icon > div > .home-icon {
-  transform: scale(0.85);
-  padding: 0;
-  width: 100%;
-  flex: 1;
-}
-.infogra img{
-  width: 100%;
-}
-#industries{
-  flex-direction: column;
-  padding: 0;
-}
-#industries .verticalHeading{
-  margin: 0 auto;
-}
-#technicalReport > .verticalHeading h3 {
-  background-color: #655F54;
-  padding: 0.5rem 8rem;
-}
-#rational .verticalHeading h3 {
-  padding: 0.5rem 8rem;
-}
-.verticalHeading h3{
-  writing-mode:unset;
-  text-orientation: mixed;
-  transform:unset;
-  padding: 1rem 5rem;
-  font-size: 1.5rem;
-}
-.verticalTitle_box h3{padding: 4.5rem 9px;}
-.indusWrap{
-  width: 65%;
-  margin-bottom: 2rem;
-}
-.indusWrap .indusCat:nth-child(2){
-  padding: 12rem 14%;
-  clip-path: polygon(0% 42%, 100% 5%, 98% 100%, 0% 100%);
-}
+@media (max-width: 767.98px) {
+  .language {
+    display: unset;
+  }
 
-.surfacesLink {  
-  top: 82px;
- }
+  #musthead .navbar-brand img {
+    max-width: 90px;
+  } 
 
-.surfacesLink .links {
-  width: 50px;
-  height: 40px; 
-}
+  .language a {
+    font-size: 0.7rem;
+  }
 
-.surfacesLink .links.active {
-  border: 2px solid #FEBE10;
-}
-.surfacesLink .links a{
-  font-size: 0.5rem;
-}
-.featureListing{
-  flex: 1;
-  margin: 0
-}
-.mr-top{
-  margin-top: 0;
-}
+  #musthead .navbar-nav .nav-item .nav-link::after {
+    content: '';
+  }
 
-#surfaces .verticalHeading h3 {       
-  padding: 0.5rem 10rem;      
-  
-}
-.surfacePatch {
-  flex: 1 0 49%;
-  height: 192px;
-}
-#store .verticalHeading h3 {
-  padding: 1.1rem 13rem;
-}
-.storeText p{
-  font-size: 1rem;
-}
-.storeText h4{
-  font-size: 1.5rem;
-}
-/* .applicator.home{
+  .navbar-dark .navbar-brand {
+    margin: 0 auto;
+
+  }
+
+  .navbar-dark .navbar-toggler {
+    border-color: transparent;
+  }
+
+  .logos {
+    height: 50px;
+  }
+
+  #heroarea {
+    margin-top: 82px;
+  }
+
+  .herobg {
+    background: url('../images/mobile-bg.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 570px;
+  }
+
+  .card-img-overlay {
+    padding: 0;
+  }
+
+  .assets-icon {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .trylucky {
+    top: 6rem;
+    right: 1rem;
+  }
+
+  .trylucky a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff
+  }
+
+  .chatIcon {
+    bottom: 1rem;
+    left: 1rem;
+    right: unset;
+  }
+
+  .chatIcon a {
+    font-size: 11px;
+    text-decoration: none;
+    color: #fff
+  }
+
+  .chatIcon a:hover,
+  .trylucky a:hover {
+    text-decoration: underline;
+  }
+
+  .assets-icon>div>.home-icon {
+    transform: scale(0.85);
+    padding: 0;
+    width: 100%;
+    flex: 1;
+  }
+
+  .infogra img {
+    width: 100%;
+  }
+
+  #industries {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #industries .verticalHeading {
+    margin: 0 auto;
+  }
+
+  #technicalReport>.verticalHeading h3 {
+    background-color: #655F54;
+    padding: 0.5rem 8rem;
+  }
+
+  #rational .verticalHeading h3 {
+    padding: 0.5rem 8rem;
+  }
+
+  .verticalHeading h3 {
+    writing-mode: unset;
+    text-orientation: mixed;
+    transform: unset;
+    padding: 1rem 5rem;
+    font-size: 1.5rem;
+  }
+
+  .verticalTitle_box h3 {
+    padding: 4.5rem 9px;
+  }
+
+  .indusWrap {
+    width: 65%;
+    margin-bottom: 2rem;
+  }
+
+  .indusWrap .indusCat:nth-child(2) {
+    padding: 12rem 14%;
+    clip-path: polygon(0% 42%, 100% 5%, 98% 100%, 0% 100%);
+  }
+
+  .surfacesLink {
+    top: 82px;
+  }
+
+  .surfacesLink .links {
+    height: 45px;
+  }
+
+  .surfacesLink .links.active {
+    border: 2px solid #FEBE10;
+  }
+
+  .surfacesLink .links a {
+    font-size: 0.5rem;
+  }
+
+  .featureListing {
+    flex: 1;
+    margin: 0
+  }
+
+  .mr-top {
+    margin-top: 0;
+  }
+
+  #surfaces .verticalHeading h3 {
+    padding: 0.5rem 10rem;
+
+  }
+
+  .surfacePatch {
+    flex: 1 0 49%;
+    height: 192px;
+  }
+
+  #store .verticalHeading h3 {
+    padding: 1.1rem 13rem;
+  }
+
+  .storeText p {
+    font-size: 1rem;
+  }
+
+  .storeText h4 {
+    font-size: 1.5rem;
+  }
+
+  /* .applicator.home{
   background: url('../images/application-mob-bg.png') center center;
 } */
-.applicator .verticalHeading h3.home {
-  text-align: center;
-  padding: 1.2rem 0;
-  font-size: 1.5rem;
-}
-.application-content.home .apptext {
-  margin-top: 0rem;
-  font-size: 1.5rem;
-}
-.application {
-  background: unset;
-  width: 100%;
-  padding-top: 0;
-}
-.application .apptext {
-  background: url('../images/application-mob-bg.png') no-repeat center;
-  min-height: 350px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-}
-/* .application-content.home {
+  .applicator .verticalHeading h3.home {
+    text-align: center;
+    padding: 1.2rem 0;
+    font-size: 1.5rem;
+  }
+
+  .application-content.home .apptext {
+    margin-top: 0rem;
+    font-size: 1.5rem;
+  }
+
+  .application {
+    background: unset;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .application .apptext {
+    background: url('../images/application-mob-bg.png') no-repeat center;
+    min-height: 350px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* .application-content.home {
   width: 80%;
   margin: 95px;
 } */
-.nplBlock {
-  margin: 0;
-}
-#latest .verticalHeading h3 {
-  padding: 1rem 4rem;
-  font-size: 1.5rem;
-}
-.text-white {
-  font-size: 1.2rem !important;
-}
-.block .info{
-  width: 100%;
-  padding: 1.5rem 1rem;
-}
-.block .info h3::after {
-  top: 88px;
-}
-.feedgrid {
-  
-  border-bottom: 1px solid #999;
-}
+  .nplBlock {
+    margin: 0;
+  }
 
-.feedgrid:first-child {
-  border-left: none;
-}
+  #latest .verticalHeading h3 {
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+  }
 
-#socilaMedia .verticalHeading h3 {
-  padding: 1rem 5.4rem;
-  font-size: 2rem;
-}
-#feedback .verticalHeading h3 {
-  padding: 1rem 8rem;
-}
-.feedgrid{
-  border-left: 0;
-}
-.rationalhead p {
-  font-size: 2rem;
-  padding: 2rem 0;
-}
+  .text-white {
+    font-size: 1.2rem !important;
+  }
+
+  .block .info {
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+  .block .info h3::after {
+    top: 88px;
+  }
+
+  .feedgrid {
+
+    border-bottom: 1px solid #999;
+  }
+
+  .feedgrid:first-child {
+    border-left: none;
+  }
+
+  #socilaMedia .verticalHeading h3 {
+    padding: 1rem 5.4rem;
+    font-size: 2rem;
+  }
+
+  #feedback .verticalHeading h3 {
+    padding: 1rem 8rem;
+  }
+
+  .feedgrid {
+    border-left: 0;
+  }
+
+  .rationalhead p {
+    font-size: 2rem;
+    padding: 2rem 0;
+  }
+
+  .applicator.home {
+    background: unset;
+  }
+
   #relevant .verticalHeading h3 {
-      padding: 1rem 8rem;
-    }
-    .relBlock{
-      width: 100%;
-    }
-    .applicator .verticalHeading h3 {
-      padding: 0.5rem 8rem;
-      text-align: center;
-    }
-    .application-content{
-      width: 100%;
-    }
-    #rational{
-      min-height: 300px;
-    }
-    .footerLinks.socilaMedia h3::after {
-      content: '';
-      position: absolute;
-      width: 38%;
-      height: 1px;
-      background-color: #FEBE10;
-      left: 32%;
-      bottom: -3px;
-    }
+    padding: 1rem 8rem;
+  }
+
+  .relBlock {
+    width: 100%;
+  }
+
+  .subscribe form {
+    padding: 0 3rem;
+  }
+
+  .applicator .verticalHeading h3 {
+    padding: 0.5rem 8rem;
+    text-align: center;
+  }
+
+  .application-content {
+    width: 100%;
+  }
+
+  #rational {
+    min-height: 300px;
+  }
+
+  .subscribe form {
+    padding: 0 5rem !important;
+    max-width: 345px;
+    margin: 0 auto;
+  }
+
+  .footerLinks.socilaMedia h3::after {
+    content: '';
+    position: absolute;
+    width: 38%;
+    height: 1px;
+    background-color: #FEBE10;
+    left: 32%;
+    bottom: -3px;
+  }
 }
 
 /* Large devices (desktops, 992px and up)*/
-@media (max-width: 991.98px) { 
-.verticalTitle_box.bot h3{
-  padding: 6rem 8px;
-}
-.indusWrap {
-  flex: 1 0 20%;
-  position: relative;
-}
-.surfacewrapper {
-  padding: 0 ;
-}
-.block{
-  width: 100%;
-}
-.footerAction{
-  padding: 0 0.5rem !important;
-}
+@media (max-width: 991.98px) {
+
+  .indusWrap {
+    flex: 1 0 20%;
+    position: relative;
+  }
+  #musthead .navbar-nav .nav-item .nav-link::after{
+    content: '';
+  }
+  .surfacesLink .links {
+    height: 50px;
+  }
+  .surfacewrapper {
+    padding: 0;
+  }
+
+  .block {
+    width: 100%;
+  }
+
+  .footerAction {
+    padding: 0 0.5rem !important;
+  }
+
+  #heroarea {
+    margin-top: 98px;
+  }
+
+  .nplBlock {
+    margin: 0 1rem;
+  }
+
+  .subscribe form {
+    padding: 0 3rem;
+  }
+
+  .surfacesLink {
+    top: 114px;
+  }
 
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
-@media (max-width: 1199.98px) { 
-.block {
-  width: 100%;}
+@media (max-width: 1199.98px) {
+  .block {
+    width: 100%;
+  }
+
+  .nplBlock {
+    margin: 0 1rem;
+  }
+
+  .subscribe form {
+    padding: 0;
+  }
+
+  .surfacesLink {
+    top: 97px;
+  }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
-@media (max-width: 1399.98px) {  }
+@media (max-width: 1399.98px) {}
