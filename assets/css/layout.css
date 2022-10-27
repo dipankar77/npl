@@ -1119,7 +1119,7 @@ body {
 
 .featurepoint ul {
     list-style-image: url('../images/listing-icon.png');
-    list-style-position: inside;
+    list-style-position: outside;
     margin: 0 0 0.5rem 0;
     padding-left: 1rem;
 
@@ -1159,6 +1159,7 @@ body {
 .mr-top{
     margin-top: 145px;
 }
+
 
 .product-info {
     padding: 0.9rem 0;
@@ -1289,22 +1290,23 @@ footer {
 }
 
 .footerLinks ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    padding: 0 0.7rem 0;
+margin: 0;
+list-style-position: outside;  
 }
 
 .footerLinks ul li {
     font-size: 0.7rem;
     padding: 5px 0;
+    color: #FEBE10;
 }
 
-.footerLinks ul li::before {
+/* .footerLinks ul li::before {
     content: '\2022';
     color: #FEBE10;
     margin-left: 0rem;
     padding-right: 0.5rem;
-}
+} */
 
 .footerLinks ul li a {
     color: #fff;
