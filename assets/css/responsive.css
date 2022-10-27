@@ -443,6 +443,7 @@
     left: 32%;
     bottom: -3px;
   }
+ 
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -452,6 +453,7 @@
     flex: 1 0 20%;
     position: relative;
   }
+ 
   #musthead .navbar-nav .nav-item .nav-link::after{
     content: '';
   }
