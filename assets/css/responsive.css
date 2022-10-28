@@ -467,6 +467,9 @@
     max-width: 555px;
     margin: 0 auto;
   }
+  .socilaMedia{
+    text-align: center;
+  }
   .ml-top{
     margin-top: 25px;
   }
