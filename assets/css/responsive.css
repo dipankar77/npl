@@ -139,6 +139,9 @@
   #rational {
     min-height: 300px;
   }
+  .socilaMedia{
+    text-align: center;
+  }
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -443,6 +446,13 @@
     left: 32%;
     bottom: -3px;
   }
+  .socilaMedia{
+    text-align: center;
+  }
+  .footerLinks h3{
+    font-size: 1.2rem;
+  }
+  
  
 }
 
@@ -497,6 +507,10 @@
   .surfacesLink {
     top: 114px;
   }
+ 
+  .footerLinks h3{
+    font-size: 1.2rem;
+  }
 
 }
 
@@ -517,6 +531,7 @@
   .surfacesLink {
     top: 97px;
   }
+ 
 }
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
