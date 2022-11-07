@@ -1184,7 +1184,7 @@ body {
 }
 
 .product-info p {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     text-align: center;
     margin-bottom: 0;
     line-height: 1.2;
@@ -1257,6 +1257,20 @@ body {
     max-width: 825px;
     border: 1px solid #eee;
     margin: 0 auto;
+}
+
+.product-wrapper{
+    width: auto;
+    padding:1rem;
+    flex: 1 0 25%;
+    border-right: 1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid  rgba(0,0,0,0.3);
+}
+.product-wrapper:nth-child(4), .product-wrapper:nth-child(8){
+    border-right: none;
+}
+.product-info{
+    width: auto;
 }
 
 
