@@ -100,18 +100,32 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.56);
 }
-#heroarea, .extendPages{margin-top: 114px;}
+
+#heroarea,
+.extendPages {
+    margin-top: 114px;
+}
+
 .herobg {
     background: url('../images/hero-banner.jpg') no-repeat center center;
     background-size: cover;
     min-height: 460px;
 }
 
+.textilebg{
+    background: url('../images/textile-banner.jpg') no-repeat center center !important;
+   
+}
+.textileText{
+    text-align: right;
+}
+
 .glassbg {
     background: unset;
     background-size: cover;
-    
+
 }
+
 .assets-icon {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0;
@@ -128,18 +142,20 @@ body {
     position: fixed;
     bottom: 2rem;
     left: 2rem;
-    
+
     padding: 0.2rem;
     border-radius: 3px;
     z-index: 1;
 }
-.chatIcon a{
+
+.chatIcon a {
     font-size: 13px;
-    color: #fff;    
+    color: #fff;
     text-decoration: none;
     margin: 0 auto;
     align-items: center;
 }
+
 .chatIcon a span {
     background-color: rgba(0, 0, 0, 0.5);
     line-height: 1;
@@ -175,6 +191,7 @@ body {
     top: 8rem;
     right: 2rem;
 }
+
 .trylucky a {
     font-size: 13px;
     color: #fff;
@@ -185,11 +202,13 @@ body {
 .trylucky a:hover {
     text-decoration: underline;
 }
-.infogra{
+
+.infogra {
     margin: 0 auto;
     text-align: center;
 }
-.infogra img{
+
+.infogra img {
     width: 35%;
 }
 
@@ -205,7 +224,7 @@ body {
     width: 100%;
 }
 
-.surfacesLink .links {    
+.surfacesLink .links {
     height: 100px;
     display: flex;
     justify-content: center;
@@ -394,18 +413,19 @@ body {
     font-size: 2rem;
     margin: 0.35%;
     font-family: 'Metropolis Extra Bold';
-    
+
     overflow: hidden;
 }
 
-.surfacePatch a{
+.surfacePatch a {
     text-decoration: none;
     color: #fff;
     text-align: center;
     line-height: 1;
     text-shadow: 1px 1px 3px #000;
 }
-.surfacePatch a:hover{
+
+.surfacePatch a:hover {
     color: #000;
 }
 
@@ -658,7 +678,8 @@ body {
 .smblock {
     background-color: #FEBE10;
 }
-.smblock img{
+
+.smblock img {
     width: 100%;
 }
 
@@ -710,14 +731,15 @@ body {
     font-family: 'Metropolis Extra Bold';
 }
 
-.feedgrid{   
-  padding: 1rem;
-  width: 100%;
-  height: 100%;
-  min-height: 250;
-  flex: 1;
+.feedgrid {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    min-height: 250;
+    flex: 1;
     border-bottom: none;
 }
+
 .feedbackdes {
     display: flex;
     justify-content: space-around;
@@ -959,7 +981,7 @@ body {
     background: unset;
     width: 40%;
     padding-top: 3rem;
-   
+
 }
 
 .application .cricle {
@@ -1065,7 +1087,8 @@ body {
     background: url('../images/bgsection.png') #000 no-repeat center;
     background-size: cover;
 }
-.featureListing{
+
+.featureListing {
     flex: 1 0 45%;
     margin: 0px 2.5%;
     display: flex;
@@ -1159,8 +1182,12 @@ body {
 .productWrap {
     background-color: #fff;
 }
-.mr-top{
+
+.mr-top {
     margin-top: 145px;
+}
+.product-img{
+    text-align: center;
 }
 
 
@@ -1185,7 +1212,7 @@ body {
 
 .product-info p {
     font-size: 0.75rem;
-    text-align: center;
+    text-align: left;
     margin-bottom: 0;
     line-height: 1.2;
     padding: 0 0.5rem;
@@ -1206,12 +1233,12 @@ body {
 .rate::before,
 .rate::after {
     content: '';
-    position: absolute;
-    width: 80%;
-    height: 1px;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    left: 24px;
+position: absolute;
+width: 100%;
+height: 1px;
+top: 0;
+background-color: rgba(0, 0, 0, 0.2);
+left: 0;
 }
 
 .rate::after {
@@ -1248,28 +1275,33 @@ body {
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
-.extendPages > h2{
+
+.extendPages>h2 {
     text-align: center;
     font-family: 'Metropolis Bold';
     margin: 9rem 0 2rem 0;
 }
+
 .business_form {
     max-width: 825px;
     border: 1px solid #eee;
     margin: 0 auto;
 }
 
-.product-wrapper{
+.product-wrapper {
     width: auto;
-    padding:1rem;
+    padding: 1rem;
     flex: 1 0 25%;
-    border-right: 1px solid rgba(0,0,0,0.3);
-    border-bottom: 1px solid  rgba(0,0,0,0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
-.product-wrapper:nth-child(4), .product-wrapper:nth-child(8){
+
+.product-wrapper:nth-child(4),
+.product-wrapper:nth-child(8) {
     border-right: none;
 }
-.product-info{
+
+.product-info {
     width: auto;
 }
 
@@ -1301,7 +1333,7 @@ footer {
     font-family: 'Metropolis Black';
     color: #FEBE10;
     text-transform: uppercase;
-    position: relative;    
+    position: relative;
 }
 
 .footerLinks h3::after {
@@ -1317,8 +1349,8 @@ footer {
 
 .footerLinks ul {
     padding: 0 0.7rem 0;
-margin: 0;
-list-style-position: outside;  
+    margin: 0;
+    list-style-position: outside;
 }
 
 .footerLinks ul li {
