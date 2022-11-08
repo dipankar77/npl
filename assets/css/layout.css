@@ -283,6 +283,7 @@ width: 65%;
     flex-direction: column;
     border: 5px solid #FEBE10;
     width: 25%;
+    max-width: 350px;
 }
 .product-price .price{
     display: flex;

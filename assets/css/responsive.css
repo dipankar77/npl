@@ -210,6 +210,9 @@
   margin: 0 1.5rem;
 height: 450px;
 }
+.product-price{
+  width: 80%;
+}
 
   .assets-icon {
     width: 100%;
