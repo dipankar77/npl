@@ -189,10 +189,27 @@
     background: url('../images/textilebg-1.jpg') no-repeat center !important;
     background-size: cover !important;
   }
+  .textileText{
+    padding-top: 24rem;
+    font-size: 2.5rem;
+  }
 
   .card-img-overlay {
     padding: 0;
   }
+  .videowrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.video{
+  margin-right: 0;
+}
+.feature-bottle {
+  margin: 0 1.5rem;
+height: 450px;
+}
 
   .assets-icon {
     width: 100%;

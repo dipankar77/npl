@@ -116,9 +116,7 @@ body {
     background: url('../images/textile-banner.jpg') no-repeat center center !important;
    
 }
-.textileText{
-    text-align: right;
-}
+
 
 .glassbg {
     background: unset;
@@ -142,7 +140,6 @@ body {
     position: fixed;
     bottom: 2rem;
     left: 2rem;
-
     padding: 0.2rem;
     border-radius: 3px;
     z-index: 1;
@@ -176,6 +173,18 @@ body {
     margin: 0 auto;
 
 }
+.textileText{
+    text-align: right;
+position: absolute;
+right: 0;
+font-size: 36px;
+font-family: 'Metropolis Bold';
+text-transform: uppercase;
+line-height: 1;
+padding: 16rem 2rem;
+text-shadow: 0 0 5px rgb(255 255 255 / 50%);
+font-size: 3rem;
+}
 
 .glassText {
     text-transform: capitalize !important;
@@ -201,6 +210,98 @@ body {
 .chatIcon a:hover,
 .trylucky a:hover {
     text-decoration: underline;
+}
+.videowrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video{
+    margin-right: 2rem;
+}
+.video video{
+    width: 100%;
+}
+.product-features{
+    padding: 0 0 5rem 0;
+    text-align: center;
+}
+.feature-bottle{
+    position: relative;
+    margin-right: 2rem;    
+    height: 450px;
+}
+.feature-bottle img{
+    height: 100%;
+   
+}
+/* .features{
+    position: relative;
+right: 0;
+width: 65%;
+} */
+.feature{position: relative;}
+.feature::after{
+    content: "";
+    width: 59px;
+    height: 1px;
+    background-color: rgb(254, 190, 16);
+    position: absolute;
+    transform: rotate(-30deg);
+    left: -99px;
+    top: 56%;
+}
+
+.feature::before{
+    content: "";
+    width: 55px;
+    height: 1px;
+    background-color: rgb(254, 190, 16);
+    position: absolute;
+    left: -44px;
+    top: 35%;
+}
+.feature span{
+    font-size: 3rem;
+    font-family: 'Metropolis Black';
+    color: #FEBE10;
+    margin-right:0.5rem;
+}
+.feature h5{
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-family: 'Metropolis Semi Bold';
+}
+.feature p{
+    font-size: 0.8rem;
+    font-family: 'Metropolis Thin';
+}
+.product-price{
+    display: flex;
+    margin: 3rem auto 0;
+    justify-content: center;
+    flex-direction: column;
+    border: 5px solid #FEBE10;
+    width: 25%;
+}
+.product-price .price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 0.3rem 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: 5px solid #fff;
+    width: 65%;
+    margin: -29px auto 5px;
+}
+.product-price .addtocartbtn{
+    margin: 0 auto -13px;
+    background-color: #FEBE10;
+    color: #000;
+    border: 5px solid #fff;
 }
 
 .infogra {
