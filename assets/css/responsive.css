@@ -213,6 +213,15 @@ height: 450px;
 .product-price{
   width: 80%;
 }
+.article-content{
+  padding: 2rem 1rem;
+}
+.reviewwrapper{
+  padding: 1rem;
+}
+.reviewwrapper{
+  flex-direction: column;
+}
 
   .assets-icon {
     width: 100%;
