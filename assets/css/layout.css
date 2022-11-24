@@ -126,6 +126,7 @@ body {
 }
 
 .action_icon li a {
+    position: relative;
     width: 35px;
     height: 35px;
     background-color: #fff;
@@ -534,6 +535,9 @@ width: 65%;
     margin-bottom: 0;
     line-height: 1;
 }
+.section-title h3.text-primary{
+    color: #FEBE10 !important;
+}
 
 .section-title span {
     font-family: 'Metropolis Semi Bold';
@@ -767,11 +771,58 @@ width: 65%;
     max-height: 150px;
     overflow: hidden;
 }
+.nplbox{
+    max-height: 250px;
+}
+.nplboxheading{
+    position: relative;
+}
+.nplboxheading h2{
+    font-size: 2.75rem;
+    font-family: 'Metropolis Black';
+}
+.nplboxheading h3{
+    position: absolute;
+    bottom: -1.6rem;
+    color: #fff;
+    right: 8%;
+    font-size: 4rem;
+    font-family: 'Metropolis Thin';
+}
 
 .nplbottom .cornercut {
     background-color: #FEBE10;
 }
+.nplbottom .date{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FEBE10;
+    padding: 0.5rem 1rem;
+   
+}
 
+.galleryBlock{
+    flex: 1 0 30%;
+    margin: 0 0.5rem;
+    border: 2px dashed #FEBE10;
+    padding: 0.3rem;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 3rem;
+    
+}
+.galleryBlock img{
+    width: 100%;
+}
+.galleryBlock h3{background-color: #FEBE10;
+    padding: 0.25rem 1.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 0;
+    bottom: -22px;}
 .block {
     width: 72%;
     color: #000;
@@ -1436,6 +1487,64 @@ left: 0;
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
+
+.offcanvas-end{
+    width: 500px !important;
+}
+.input-group {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+.pro-title{text-decoration: none;}
+.pro-title h6 {
+    color: #001e2b;
+    font-weight: 600;
+    font-size: 0.7rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+.input-group .btn {
+    position: relative;
+    z-index: 2;
+}
+.input-spinner .button-minus, .input-spinner .button-plus {
+    background-color: transparent;
+    border-color: #ecf0ef;
+    height: 2rem;
+    width: 1.8rem;
+}
+.form-control-sm {
+    border-radius: 0.25rem;
+    font-size: .765625rem;
+    min-height: calc(1.5em + 0.5rem + 2px);
+    padding: 0.25rem 0.5rem;
+}
+.input-spinner .form-input {
+    background: 0 0;
+    border: 1px solid #ecf0ef;
+    height: 100%;
+    min-height: 2rem;
+    text-align: center;
+    width: 2rem!important;
+}
+.cartprice{
+    font-size: 0.8rem;
+}
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
 
 .extendPages>h2 {
     text-align: center;
